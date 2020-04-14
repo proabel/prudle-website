@@ -1,0 +1,38 @@
+.header-wrapper{
+    .navbar-light{
+        background-color: #ffffff;
+    }
+    .header-top{
+
+    }
+    .header-bottom{
+       a{color: #ffffff;}
+    }
+    .header-info{
+        display: flex;
+        margin-top:5px;
+        .header-info-text{
+            padding-left: 10px;
+        }
+    }
+    .lang-text{
+        padding-left: 20px;
+    }
+
+
+    // Media queries
+    @media (min-width: 768px) {
+        .collapse.dont-collapse-sm {
+          display: block;
+          height: auto !important;
+          visibility: visible;
+        }
+    }
+
+    // Overrides
+    @media (min-width: 992px){
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding: .5rem 1rem;
+        }
+    }
+}
