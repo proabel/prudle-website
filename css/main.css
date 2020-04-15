@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 @media (min-width: 768px) {
   .collapse.dont-collapse-sm {
     display: block;
@@ -10,14 +10,14 @@
 .bg-primary, .app-bg-primary {
   background-color: #0D59CA; }
 
-.txt-dark {
-  color: #333333; }
-
 body, p, span, li, a, div, section, table, button, input {
   font-family: 'Poppins', sans-serif; }
 
 .bold {
   font-weight: bold; }
+
+.medium {
+  font-weight: 600; }
 
 .center {
   text-align: center; }
@@ -25,8 +25,23 @@ body, p, span, li, a, div, section, table, button, input {
 .text-small {
   font-size: .85rem; }
 
+.text-big {
+  font-size: 1.5rem; }
+
+.text-large {
+  font-size: 2.5rem; }
+
 .spread {
   letter-spacing: .21px; }
+
+.text-primary, .app-text-primary {
+  color: #0D59CA; }
+
+.txt-dark, .text-dark {
+  color: #333333; }
+
+.text-almost-dark {
+  color: #464646; }
 
 .app-icon {
   width: 18px;
@@ -143,14 +158,26 @@ body, p, span, li, a, div, section, table, button, input {
     padding: .5rem 1rem; } }
 
 .home-slider .carousel-item .slider-title {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 52px;
+  font-weight: 600;
   color: #ffffff;
   padding: .8em;
-  line-height: 1.5em; }
+  line-height: 1.3em; }
+.home-slider .carousel-item .slider-btn {
+  margin-right: 10px; }
+  .home-slider .carousel-item .slider-btn ion-icon {
+    position: relative;
+    top: 3px;
+    left: 3px; }
 .home-slider .slider1 {
   background-image: url("../images/homesliders/slider1.png");
   background-size: cover; }
+
+.slider-overlapped-cards {
+  position: relative;
+  top: -300px; }
+  .slider-overlapped-cards .container {
+    padding: 0px 80px; }
 
 @media (min-width: 992px) {
   .home-slider .carousel-item {

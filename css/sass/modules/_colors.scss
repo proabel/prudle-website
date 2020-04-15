@@ -3,12 +3,10 @@ $primary-bright-color:#116AD8;
 $accent-color:#EAB300;
 $accent-dark-color:#CEA211;
 $dark: #333333;
+$almost-dark: #464646;
 .bg-white{
     background-color: #ffffff;
 }
 .bg-primary, .app-bg-primary{
     background-color: $primary-color;
-}
-.txt-dark{
-    color: $dark;
 }
