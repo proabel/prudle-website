@@ -1,0 +1,14 @@
+.app-icon{
+    width:18px;
+    height:18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding: 5px;
+    margin-top:5px;
+}
+
+.app-icon.left-arrow{
+    background-image: url('../images/icons/buttons/left-arrow.png');
+}

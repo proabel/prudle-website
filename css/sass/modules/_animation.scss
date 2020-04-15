@@ -1,0 +1,85 @@
+.faster2x{
+    animation-duration: .2s;
+}
+
+// SlideUp Short
+@-webkit-keyframes slideInUpShort {
+    from {
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInUpShort {
+    from {
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUpShort {
+    -webkit-animation-name: slideInUpShort;
+    animation-name: slideInUpShort;
+  }
+
+
+  // fadeUp short
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
+  //underline from left thin orange
+  .menu-accent-2px .hvr-underline-from-left:before {
+    background:$accent-color;
+    height: 2px;
+  }
+
+  // .menu-white>.hvr-underline-from-left:before {
+  //   background:#ffffff;
+  // }
+
+  // .menu-white>.hvr-underline-from-left.active:before {
+  //   background: none;
+  // }

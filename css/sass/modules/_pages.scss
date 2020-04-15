@@ -1,0 +1,28 @@
+// Landing Page
+
+// Slider
+
+.home-slider{
+    .carousel-item{
+        .slider-title{
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            padding: .8em;
+            line-height: 1.5em;
+        }
+    }
+    .slider1{
+        background-image: url('../images/homesliders/slider1.png');
+        background-size: cover;
+    }
+}
+
+//media query
+@media (min-width: 992px){
+    .home-slider{
+        .carousel-item{
+            height: 650px;
+        }
+    }
+}

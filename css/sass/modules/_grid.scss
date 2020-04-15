@@ -1,0 +1,16 @@
+// .collapse-only-mobile{
+//     display: none;
+// }
+// @media (min-width: 576px){
+//     .collapse-only-mobile{
+//         display: block;
+//     }
+// }
+
+@media (min-width: 768px) {
+    .collapse.dont-collapse-sm {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+}
