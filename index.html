@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/ace82d9331.js" crossorigin="anonymous"></script>
     <title>Translation Management System: Prudle - Prudle Labs</title>
   </head>
   <body>
@@ -19,13 +20,18 @@
     <div class="header-wrapper">
       <header>
         <div class="header-top">
-          <div class="container bg-white">
+          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand collapse dont-collapse-md" href="#">
                 <img src="images/Logo.png" alt="Prudle Labs">
               </a>
+              <a class="navbar-brand collapse-lg" href="#">
+                <img src="images/logo_white.png" alt="Prudle Labs">
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <!-- <ion-icon name="menu-outline"></ion-icon> -->
+                <i class="fas fa-bars"></i>
               </button>
             
              
@@ -99,7 +105,7 @@
           </div>
         </div>
         <!-- end top header -->
-        <div class="header-bottom app-bg-primary collapse dont-collapse-sm" id="navBarMobile">
+        <div class="header-bottom app-bg-primary collapse dont-collapse-md" id="navBarMobile">
           <div class="container">
             <nav class="navbar navbar-expand-lg app-bg-primary">
               <ul class="navbar-nav mr-auto menu-white">
@@ -158,17 +164,94 @@
                   <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">
                       <!-- <i class="fas fa-search"></i> -->
-                      <ion-icon src="images/icons/search.svg"></ion-icon>
+                      <ion-icon src="images/icons/search.svg" style="color:red;"></ion-icon>
                     </button>
                   </div>
                 </div>
-              </form>
+              </form> 
             </nav>
           </div>
         </div>
         <!-- end bottom header -->
+        <nav class="navbar  app-sticky-top drop-shadow animated slideInDown faster">
+          <a class="navbar-brand" href="#">
+            <img src="images/Logo.png" alt="Prudle Labs">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMobileSticky" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- <ion-icon name="menu-outline"></ion-icon> -->
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="header-bottom app-bg-primary collapse dont-collapse-md" id="navBarMobileSticky">
+              <nav class="navbar navbar-expand-lg app-bg-primary">
+                <ul class="navbar-nav mr-auto menu-white">
+                  <li class="nav-item active hvr-underline-from-left">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                    </a>
+                    <div class="dropdown-menu fadeInUp animated faster2x" aria-labelledby="productsDropdown">
+                      <a class="dropdown-item menu-accent-2px" href="#">
+                        <span class="hvr-underline-from-left">P-I18N</span>
+                      </a>
+                      <a class="dropdown-item menu-accent-2px" href="#"><span class="hvr-underline-from-left">P-TMS</span></a>
+                      <a class="dropdown-item menu-accent-2px" href="#"><span class="hvr-underline-from-left">P-I10N QA</span></a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Company
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                      <a class="dropdown-item" href="#">P-I18N</a>
+                      <a class="dropdown-item" href="#">P-TMS</a>
+                      <a class="dropdown-item" href="#">P-I10N QA</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Knowledge Base
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                      <a class="dropdown-item" href="#">P-I18N</a>
+                      <a class="dropdown-item" href="#">P-TMS</a>
+                      <a class="dropdown-item" href="#">P-I10N QA</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                      <a class="dropdown-item" href="#">P-I18N</a>
+                      <a class="dropdown-item" href="#">P-TMS</a>
+                      <a class="dropdown-item" href="#">P-I10N QA</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 collapse dont-collapse-sm">
+                  <div class="input-group header-search">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <!-- <i class="fas fa-search"></i> -->
+                        <ion-icon src="images/icons/search.svg" style="color:red;"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </form> 
+              </nav>
+            
+          </div>
+        </nav>
       </header>
     </div>
+    <!-- END Header -->
     <div class="main-wrapper">
       <div class="home-slider">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -177,7 +260,7 @@
               <!-- <img class="d-block" width="100%" src="images/homesliders/slider1.png" alt="First slide"> -->
               <div class="container">
                 <div class="row">
-                  <div class="col-sm-8">
+                  <div class="col-8">
                     <h2 class="slider-title text-center animated fadeInLeft">There is a better way <br>to Translate </h2>
                   </div>
                 </div>
@@ -202,7 +285,7 @@
           </a>
         </div>
       </div>
-      <div class="slider-overlapped-cards">
+      <!-- <div class="slider-overlapped-cards">
         <div class="container">
           <div class="card-deck">
             <div class="card no-border-radius no-border drop-shadow">
@@ -232,13 +315,24 @@
             
           </div>
         </div>
-      </div>
+      </div> -->
+      <!-- <div class="home-services">
+        <div class="container">
+          <div class="row">
+            <p>SERVICES WE OFFER</p>
+            <p>Services We Deliver <br> we provide <span>truly prominent Solutions</span></p>
+          </div>
+        </div>
+      </div> -->
     </div>
-    <!-- /Header -->
+    <div class="mock-main">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis quo eaque voluptatibus ducimus praesentium aspernatur dolore repellat laborum suscipit.</p>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,15 +1,24 @@
 .header-wrapper{
+    position: relative;
+    z-index: 100;
     .navbar{
         padding-top:0px;
         padding-bottom: 0px;
     }
-    .navbar-light{
-        background-color: #ffffff;
+    .navbar-brand{
+        padding-top:10px;
     }
-    .header-top{
-
+    .navbar-toggler{
+        color:#ffffff;
+    }
+    .navbar-light{
+        //background-color: #ffffff;
     }
     .header-bottom{
+        position: absolute;
+        top:82px;
+        width: 100%;
+        left:0px;
        a{color: #ffffff;}
     }
     .header-info{
@@ -66,6 +75,21 @@
             padding-right:1.2rem;
         }
     }
+    .app-sticky-top{
+        position: fixed;
+        top:0px;
+        height:82px;
+        width: 100%;
+        display:none;
+        background: #ffffff;
+        .navbar-brand{
+            img{ width: 160px;}
+        }
+        .navbar-toggler{
+            i{ color: $primary-color; }
+        }
+    }
+
     // Media queries
     
 

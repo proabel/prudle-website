@@ -21,16 +21,33 @@
 // .line-height-close{
 //     line-height: 1.2em;
 // }
+.mock-main{
+    display: block;
+    width: 100%;
+    height: 3000px;
+    background-color: #ccc;
+    p{
+        position: absolute;
+        bottom: 0px;
+        color:blue;
+        
+    }
+}
 
+/******** LANDING PAGE  **************/
+/*************************************/
 
-// Landing Page
-
-// Slider
+    // Slider
 
 .home-slider{
+    //background-color: #072A9F;
+    position: relative;
+    top:-96px;
+    z-index: 1;
     .carousel-item{
+        padding-top:96px;
         .slider-title{
-            font-size: 52px;
+            // font-size: 52px; //Move to Lg media
             font-weight: 600;
             color: #ffffff;
             padding: .8em;
@@ -46,32 +63,40 @@
         }
     }
     .slider1{
-        background-image: url('../images/homesliders/slider1.png');
-        background-size: cover;
+        background-image: url('../images/homesliders/bettertranslate.png');
+        background-size: 1100px;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
 }
 
-// slider overlap cards
+    // slider overlap cards
 .slider-overlapped-cards{
-    position: relative;
-    top: -300px;
     .container{
         padding: 0px 80px;
     }
     .card-body{
         line-height: 42px;
         overflow-wrap: normal;
+        padding-top:30px;
+        padding-bottom:40px;
         img{
+            height: 126px;
             padding-bottom: 20px;
         }
     }
 }
 
-//media query
+    //media query
 @media (min-width: 992px){
     .home-slider{
         .carousel-item{
             height: 650px;
         }
+    }
+
+    .slider-overlapped-cards{
+        position: relative;
+        top: -300px;
     }
 }

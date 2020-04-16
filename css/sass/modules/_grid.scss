@@ -13,4 +13,17 @@
       height: auto !important;
       visibility: visible;
     }
+    .collapse-md{
+      display: none;
+    }
+}
+@media (min-width: 992px) {
+    .collapse.dont-collapse-md {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+    .collapse-lg{
+      display: none;
+    }
 }
