@@ -28,6 +28,9 @@ body, p, span, li, a, div, section, table, button, input {
 .text-big {
   font-size: 1.5rem; }
 
+.text-big2 {
+  font-size: 2rem; }
+
 .text-large {
   font-size: 2.5rem; }
 
@@ -157,6 +160,24 @@ body, p, span, li, a, div, section, table, button, input {
   .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
     padding: .5rem 1rem; } }
 
+.no-hover {
+  pointer-events: none; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.no-border-radius {
+  border-radius: 0px; }
+
+.no-border {
+  border: none; }
+
+.drop-shadow {
+  box-shadow: 6px 6px 20px #00000029; }
+
 .home-slider .carousel-item .slider-title {
   font-size: 52px;
   font-weight: 600;
@@ -178,6 +199,11 @@ body, p, span, li, a, div, section, table, button, input {
   top: -300px; }
   .slider-overlapped-cards .container {
     padding: 0px 80px; }
+  .slider-overlapped-cards .card-body {
+    line-height: 42px;
+    overflow-wrap: normal; }
+    .slider-overlapped-cards .card-body img {
+      padding-bottom: 20px; }
 
 @media (min-width: 992px) {
   .home-slider .carousel-item {

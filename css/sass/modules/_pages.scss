@@ -1,3 +1,28 @@
+//common
+.no-hover{
+    pointer-events: none;
+}
+.no-padding{
+    padding:0px;
+}
+.no-margin{
+    margin:0px;
+}
+.no-border-radius{
+    border-radius: 0px;
+}
+.no-border{
+    border: none;   
+}
+
+.drop-shadow{
+    box-shadow: 6px 6px 20px #00000029;
+}
+// .line-height-close{
+//     line-height: 1.2em;
+// }
+
+
 // Landing Page
 
 // Slider
@@ -32,6 +57,13 @@
     top: -300px;
     .container{
         padding: 0px 80px;
+    }
+    .card-body{
+        line-height: 42px;
+        overflow-wrap: normal;
+        img{
+            padding-bottom: 20px;
+        }
     }
 }
 
