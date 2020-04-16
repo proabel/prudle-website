@@ -18,6 +18,7 @@
 .drop-shadow{
     box-shadow: 6px 6px 20px #00000029;
 }
+  
 // .line-height-close{
 //     line-height: 1.2em;
 // }
@@ -41,8 +42,8 @@
 
 .home-slider{
     //background-color: #072A9F;
-    position: relative;
-    top:-96px;
+    position: relative; 
+    top:-96px; //changes in bigger screens
     z-index: 1;
     .carousel-item{
         padding-top:96px;
@@ -90,6 +91,7 @@
     //media query
 @media (min-width: 992px){
     .home-slider{
+        top:0px;
         .carousel-item{
             height: 650px;
         }

@@ -7,6 +7,21 @@
 //     }
 // }
 
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  *{
+    flex: 0 0 auto;
+  }
+}
+
+align-self-end{
+  align-self: end;
+}
+
 @media (min-width: 768px) {
     .collapse.dont-collapse-sm {
       display: block;
@@ -19,6 +34,16 @@
 }
 @media (min-width: 992px) {
     .collapse.dont-collapse-md {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+    .collapse-lg{
+      display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .collapse.dont-collapse-sl {
       display: block;
       height: auto !important;
       visibility: visible;
