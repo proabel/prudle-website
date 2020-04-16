@@ -23,8 +23,12 @@ align-self-end {
     height: auto !important;
     visibility: visible; }
 
-  .collapse-lg {
-    display: none; } }
+  .collapse-lg, .collapse.dont-collapse-sm.collapse-lg {
+    display: none; }
+
+  .relative-from-lg {
+    position: relative;
+    top: 0px; } }
 @media (min-width: 1200px) {
   .collapse.dont-collapse-sl {
     display: block;
@@ -166,19 +170,24 @@ body, p, span, li, a, div, section, table, button, input {
     padding-top: .75rem; }
   .header-wrapper .nav-item.active {
     border-bottom: 4px solid #ffffff; }
-  .header-wrapper .dropdown-menu {
+  .header-wrapper .header-bottom .dropdown-menu {
     border-radius: 0px;
     border-bottom: 4px solid #CEA211;
     margin-top: 0px; }
-    .header-wrapper .dropdown-menu a.dropdown-item {
+    .header-wrapper .header-bottom .dropdown-menu a.dropdown-item {
       color: #333333;
       padding-top: .5rem;
       padding-bottom: .5rem; }
-      .header-wrapper .dropdown-menu a.dropdown-item span {
+      .header-wrapper .header-bottom .dropdown-menu a.dropdown-item span {
         padding-right: 10px; }
-    .header-wrapper .dropdown-menu a.dropdown-item:hover {
+    .header-wrapper .header-bottom .dropdown-menu a.dropdown-item:hover {
       color: #EAB300;
       background: none; }
+  .header-wrapper .header-bottom-sticky-wrapper {
+    position: fixed;
+    top: 0px;
+    background-color: #0D59CA;
+    width: 100%; }
   .header-wrapper .header-search.input-group {
     margin-bottom: 0px; }
     .header-wrapper .header-search.input-group input.form-control {
@@ -208,7 +217,7 @@ body, p, span, li, a, div, section, table, button, input {
       color: #0D59CA; }
   @media (min-width: 992px) {
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
-      padding: .5rem 1rem; }
+      padding: .5rem .5rem; }
     .header-wrapper .header-info-wrapper {
       width: 430px; }
     .header-wrapper .header-info {
@@ -216,7 +225,11 @@ body, p, span, li, a, div, section, table, button, input {
     .header-wrapper .header-bottom {
       position: relative;
       top: 0px;
-      width: 100%; } }
+      width: 100%; }
+    .header-wrapper .app-sticky-top {
+      top: -200px; }
+    .header-wrapper .header-bottom-sticky-wrapper {
+      display: none; } }
   @media (min-width: 1200px) {
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem 1rem; }

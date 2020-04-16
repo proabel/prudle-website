@@ -20,6 +20,7 @@
         width: 100%;
         left:0px;
        a{color: #ffffff;}
+       
     }
     .header-info{
         //min-width: 200px;
@@ -39,23 +40,42 @@
     .nav-item.active{
         border-bottom: 4px solid #ffffff;
     }
-    .dropdown-menu{
-        border-radius: 0px;
-        border-bottom: 4px solid $accent-dark-color;
-        margin-top: 0px;
-        a.dropdown-item{
-            color: $dark;
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-            span{
-                padding-right:10px;
+    .header-bottom{
+        .dropdown-menu{
+            border-radius: 0px;
+            border-bottom: 4px solid $accent-dark-color;
+            margin-top: 0px;
+            a.dropdown-item{
+                color: $dark;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                span{
+                    padding-right:10px;
+                }
+            }
+            a.dropdown-item:hover{
+                color: $accent-color;
+                background:none;
             }
         }
-        a.dropdown-item:hover{
-            color: $accent-color;
-            background:none;
+    }
+    .header-bottom-sticky-wrapper{
+        position: fixed;
+        top:0px;
+        background-color: $primary-color;
+        width: 100%;
+        .header-bottom-sticky{
+
         }
     }
+    // .header-bottom.header-bottom-sticky{
+    //     position:fixed;
+    //     top:82px;
+    // }
+    // .header-bottom-sticky-wrapper{
+    //     // position:fixed;
+    //     // top:82px;
+    // }
     .header-search.input-group{
         margin-bottom: 0px;
         input.form-control{
@@ -97,7 +117,7 @@
     // Overrides
     @media (min-width: 992px){
         .navbar-expand-lg .navbar-nav .nav-link {
-            padding: .5rem 1rem;
+            padding: .5rem .5rem;
         }
         .header-info-wrapper{
             width: 430px;
@@ -110,6 +130,13 @@
             top:0px;
             width: 100%;
         }
+        .app-sticky-top{
+            top:-200px;
+        }
+        .header-bottom-sticky-wrapper{
+            display: none;
+        }
+        
     }
     @media (min-width: 1200px){
         .navbar-expand-lg .navbar-nav .nav-link {
@@ -123,5 +150,8 @@
             top:0px;
             width: 100%;
         }
+        // .header-bottom-sticky-wrapper{
+        //     max-width: 1140px;
+        // }
     }
 }
