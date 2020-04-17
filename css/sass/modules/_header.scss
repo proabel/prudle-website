@@ -135,6 +135,14 @@
         }
         .header-bottom-sticky-wrapper{
             display: none;
+            .header-bottom-sticky{
+                ul.navbar-nav{
+                    height: 70px;
+                }
+                .navbar-brand{
+                    padding-top: 0px;
+                }
+            }
         }
         
     }

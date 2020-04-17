@@ -83,3 +83,23 @@
   // .menu-white>.hvr-underline-from-left.active:before {
   //   background: none;
   // }
+
+  //hover float 2Y
+  .hvr-float-2x {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float-2x:hover, .hvr-float-2x:focus, .hvr-float-2x:active {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  

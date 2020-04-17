@@ -4,9 +4,21 @@ $accent-color:#EAB300;
 $accent-dark-color:#CEA211;
 $dark: #333333;
 $almost-dark: #464646;
+$light-color:#F8F8F8;
 .bg-white{
     background-color: #ffffff;
 }
 .bg-primary, .app-bg-primary{
     background-color: $primary-color;
+}
+.bg-accent-dark{
+    background-color: $accent-dark-color;
+}
+
+.bg-dark-blue-grad{
+    background: transparent linear-gradient(180deg, #0D59CA 0%, #0A449B 54%, #004181 100%) 0% 0% no-repeat padding-box;
+}
+
+.bg-light, .app-bg-light{
+    background-color: $light-color;
 }

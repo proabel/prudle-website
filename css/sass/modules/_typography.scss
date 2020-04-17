@@ -18,13 +18,13 @@ body, p, span, li, a, div, section, table, button, input{
     font-size: .85rem;
 }
 .text-big{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .text-big2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .text-large{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .spread{
     letter-spacing: .21px;
@@ -40,4 +40,22 @@ body, p, span, li, a, div, section, table, button, input{
 }
 .text-almost-dark{
     color: $almost-dark;
+}
+
+@media (min-width: 576px) {
+    .text-small{
+        font-size: .85rem;
+    }
+    .text-big{
+        font-size: 1.5rem;
+    }
+    .text-big2{
+        font-size: 2rem;
+    }
+    .text-large{
+        font-size: 2.5rem;
+    }
+    .spread{
+        letter-spacing: .21px;
+    }
 }

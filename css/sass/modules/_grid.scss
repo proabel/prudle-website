@@ -22,9 +22,14 @@ align-self-end{
   align-self: end;
 }
 
+.full-block{
+  width: 100%;
+  display: block;
+}
+
 @media (min-width: 768px) {
-    .collapse.dont-collapse-sm {
-      display: block;
+    .collapse.dont-collapse-md {
+      display: flex;
       height: auto !important;
       visibility: visible;
     }
@@ -33,8 +38,8 @@ align-self-end{
     }
 }
 @media (min-width: 992px) {
-    .collapse.dont-collapse-md {
-      display: block;
+    .collapse.dont-collapse-lg {
+      display: flex;
       height: auto !important;
       visibility: visible;
     }
@@ -47,12 +52,12 @@ align-self-end{
     }
 }
 @media (min-width: 1200px) {
-    .collapse.dont-collapse-sl {
-      display: block;
+    .collapse.dont-collapse-xl {
+      display: flex;
       height: auto !important;
       visibility: visible;
     }
-    .collapse-lg{
+    .collapse-xl{
       display: none;
     }
 }

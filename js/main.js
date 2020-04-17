@@ -3,7 +3,7 @@
     var bottomHeaderSticky = document.querySelector('#navBarMobileSticky');
     var bottomHeader = document.querySelector('#navBarMobile');
     var HBSWrapper = document.querySelector('.header-bottom-sticky-wrapper');
-    //var toggleHeaderBottomSticky = false;
+    var toggleHeaderBottomSticky = false;
     if(window.innerWidth >= 992)
         toggleHeaderBottomSticky = true;
     document.onscroll = function(e){

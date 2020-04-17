@@ -9,17 +9,21 @@
 align-self-end {
   align-self: end; }
 
+.full-block {
+  width: 100%;
+  display: block; }
+
 @media (min-width: 768px) {
-  .collapse.dont-collapse-sm {
-    display: block;
+  .collapse.dont-collapse-md {
+    display: flex;
     height: auto !important;
     visibility: visible; }
 
   .collapse-md {
     display: none; } }
 @media (min-width: 992px) {
-  .collapse.dont-collapse-md {
-    display: block;
+  .collapse.dont-collapse-lg {
+    display: flex;
     height: auto !important;
     visibility: visible; }
 
@@ -30,18 +34,27 @@ align-self-end {
     position: relative;
     top: 0px; } }
 @media (min-width: 1200px) {
-  .collapse.dont-collapse-sl {
-    display: block;
+  .collapse.dont-collapse-xl {
+    display: flex;
     height: auto !important;
     visibility: visible; }
 
-  .collapse-lg {
+  .collapse-xl {
     display: none; } }
 .bg-white {
   background-color: #ffffff; }
 
 .bg-primary, .app-bg-primary {
   background-color: #0D59CA; }
+
+.bg-accent-dark {
+  background-color: #CEA211; }
+
+.bg-dark-blue-grad {
+  background: transparent linear-gradient(180deg, #0D59CA 0%, #0A449B 54%, #004181 100%) 0% 0% no-repeat padding-box; }
+
+.bg-light, .app-bg-light {
+  background-color: #F8F8F8; }
 
 body, p, span, li, a, div, section, table, button, input {
   font-family: 'Poppins', sans-serif; }
@@ -59,13 +72,13 @@ body, p, span, li, a, div, section, table, button, input {
   font-size: .85rem; }
 
 .text-big {
-  font-size: 1.5rem; }
+  font-size: 1.1rem; }
 
 .text-big2 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .text-large {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .spread {
   letter-spacing: .21px; }
@@ -79,6 +92,21 @@ body, p, span, li, a, div, section, table, button, input {
 .text-almost-dark {
   color: #464646; }
 
+@media (min-width: 576px) {
+  .text-small {
+    font-size: .85rem; }
+
+  .text-big {
+    font-size: 1.5rem; }
+
+  .text-big2 {
+    font-size: 2rem; }
+
+  .text-large {
+    font-size: 2.5rem; }
+
+  .spread {
+    letter-spacing: .21px; } }
 .app-icon {
   width: 18px;
   height: 18px;
@@ -140,6 +168,23 @@ body, p, span, li, a, div, section, table, button, input {
 .menu-accent-2px .hvr-underline-from-left:before {
   background: #EAB300;
   height: 2px; }
+
+.hvr-float-2x {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-float-2x:hover, .hvr-float-2x:focus, .hvr-float-2x:active {
+  -webkit-transform: translateY(-16px);
+  transform: translateY(-16px); }
 
 .header-wrapper {
   position: relative;
@@ -229,7 +274,11 @@ body, p, span, li, a, div, section, table, button, input {
     .header-wrapper .app-sticky-top {
       top: -200px; }
     .header-wrapper .header-bottom-sticky-wrapper {
-      display: none; } }
+      display: none; }
+      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav {
+        height: 70px; }
+      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand {
+        padding-top: 0px; } }
   @media (min-width: 1200px) {
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem 1rem; }
@@ -258,6 +307,14 @@ body, p, span, li, a, div, section, table, button, input {
 .drop-shadow {
   box-shadow: 6px 6px 20px #00000029; }
 
+.btn-round {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%; }
+
+.btn-bar .btn {
+  margin: 0px 20px 20px 0px; }
+
 .mock-main {
   display: block;
   width: 100%;
@@ -275,43 +332,132 @@ body, p, span, li, a, div, section, table, button, input {
   top: -96px;
   z-index: 1; }
   .home-slider .carousel-item {
-    padding-top: 96px; }
+    padding-top: 96px;
+    height: 500px;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: center top; }
     .home-slider .carousel-item .slider-title {
       font-weight: 600;
       color: #ffffff;
       padding: .8em;
       line-height: 1.3em; }
     .home-slider .carousel-item .slider-btn {
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-bottom: 10px; }
       .home-slider .carousel-item .slider-btn ion-icon {
         position: relative;
         top: 3px;
         left: 3px; }
   .home-slider .slider1 {
-    background-image: url("../images/homesliders/bettertranslate.png");
-    background-size: 1100px;
-    background-repeat: no-repeat;
-    background-position: center top; }
+    background-image: url("../images/homesliders/bettertranslate.png"); }
 
-.slider-overlapped-cards .container {
-  padding: 0px 80px; }
-.slider-overlapped-cards .card-body {
-  line-height: 42px;
-  overflow-wrap: normal;
-  padding-top: 30px;
-  padding-bottom: 40px; }
-  .slider-overlapped-cards .card-body img {
-    height: 126px;
-    padding-bottom: 20px; }
+.slider-overlapped-cards {
+  position: relative;
+  margin-top: -150px;
+  z-index: 10; }
+  .slider-overlapped-cards .container {
+    padding: 0px 40px; }
+  .slider-overlapped-cards .card {
+    margin-bottom: 20px;
+    background: none; }
+    .slider-overlapped-cards .card .card-body {
+      position: relative;
+      margin: 0px 10px;
+      z-index: 12;
+      line-height: 2rem;
+      overflow-wrap: normal;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      background-color: #ffffff; }
+      .slider-overlapped-cards .card .card-body img {
+        height: 126px;
+        padding-bottom: 20px; }
+    .slider-overlapped-cards .card .card-curved-footer {
+      display: none;
+      padding-bottom: 60px;
+      margin: 0px 20px;
+      border-radius: 50%;
+      position: relative;
+      margin-top: -130px;
+      z-index: 11;
+      height: 200px; }
+      .slider-overlapped-cards .card .card-curved-footer a {
+        position: relative;
+        top: 145px;
+        color: #ffffff; }
+  .slider-overlapped-cards .card:hover .card-curved-footer {
+    display: block; }
 
+.home-services .app-card-flat {
+  color: #ffffff;
+  margin-bottom: 40px; }
+  .home-services .app-card-flat .app-card-body {
+    padding: 20px; }
+  .home-services .app-card-flat .btn-round-wrapper {
+    height: 0px; }
+  .home-services .app-card-flat .btn-round {
+    background-color: #ffffff;
+    color: #0D59CA;
+    border: none;
+    font-size: 24px;
+    padding-top: 7px;
+    margin-top: 10px; }
+.home-services .btn-bar {
+  margin: 30px 0px; }
+.home-services .app-card-flat:hover .btn-round {
+  background-color: #CEA211;
+  color: #ffffff;
+  font-size: 24px;
+  padding-top: 7px; }
+
+.home-discover .row {
+  padding: 30px 0px; }
+.home-discover .tab-controls .btn {
+  margin-bottom: 20px; }
+.home-discover .video-wrapper iframe {
+  height: 300px; }
+
+@media (min-width: 576px) {
+  .slider-overlapped-cards {
+    position: relative;
+    margin-top: -200px; }
+    .slider-overlapped-cards .container {
+      padding: 0px 80px; }
+    .slider-overlapped-cards .card .card-body {
+      line-height: 42px;
+      overflow-wrap: normal;
+      padding-top: 30px;
+      padding-bottom: 40px; }
+      .slider-overlapped-cards .card .card-body img {
+        height: 126px;
+        padding-bottom: 20px; } }
+@media (min-width: 768px) {
+  .slider-overlapped-cards .container {
+    padding: 0px 80px; } }
 @media (min-width: 992px) {
+  .section-intro {
+    padding: 40px 0px; }
+
   .home-slider {
     top: 0px; }
     .home-slider .carousel-item {
-      height: 650px; }
+      background-size: cover;
+      height: 650px;
+      padding-top: 0px; }
+      .home-slider .carousel-item .slider-title {
+        font-size: 52px; }
 
   .slider-overlapped-cards {
     position: relative;
-    top: -300px; } }
+    margin-top: -300px; }
+    .slider-overlapped-cards .card .card-body {
+      line-height: 42px;
+      overflow-wrap: normal;
+      padding-top: 30px;
+      padding-bottom: 40px; }
+      .slider-overlapped-cards .card .card-body img {
+        height: 126px;
+        padding-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

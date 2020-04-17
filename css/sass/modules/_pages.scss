@@ -18,6 +18,16 @@
 .drop-shadow{
     box-shadow: 6px 6px 20px #00000029;
 }
+.btn-round{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.btn-bar{
+    .btn{
+        margin:0px 20px 20px 0px;
+    }
+}
   
 // .line-height-close{
 //     line-height: 1.2em;
@@ -47,8 +57,11 @@
     z-index: 1;
     .carousel-item{
         padding-top:96px;
+        height: 500px;
+        background-size: 1100px;
+        background-repeat: no-repeat;
+        background-position: center top;
         .slider-title{
-            // font-size: 52px; //Move to Lg media
             font-weight: 600;
             color: #ffffff;
             padding: .8em;
@@ -56,6 +69,7 @@
         }
         .slider-btn{
             margin-right: 10px;
+            margin-bottom: 10px;
             ion-icon{
                 position: relative;
                 top:3px;
@@ -65,40 +79,184 @@
     }
     .slider1{
         background-image: url('../images/homesliders/bettertranslate.png');
-        background-size: 1100px;
-        background-repeat: no-repeat;
-        background-position: center top;
     }
 }
 
-    // slider overlap cards
+    //  slider overlap cards
+
 .slider-overlapped-cards{
+    position: relative;
+    margin-top: -150px;
+    z-index: 10;
     .container{
-        padding: 0px 80px;
+        padding: 0px 40px;
     }
-    .card-body{
-        line-height: 42px;
-        overflow-wrap: normal;
-        padding-top:30px;
-        padding-bottom:40px;
-        img{
-            height: 126px;
-            padding-bottom: 20px;
+    .card{
+        margin-bottom:20px;
+        background: none;
+        .card-body{
+            position: relative;
+            margin:0px 10px;
+            z-index: 12;
+            line-height: 2rem;
+            overflow-wrap: normal;
+            padding-top:30px;
+            padding-bottom:40px;
+            background-color: #ffffff;
+            img{
+                height: 126px;
+                padding-bottom: 20px;
+            }
+        }
+        .card-curved-footer{
+            display: none;
+            padding-bottom: 60px;
+            margin:0px 20px;
+            border-radius: 50%;
+            position: relative;
+            margin-top:-130px;
+            z-index: 11;
+            height: 200px;
+            a{
+                position: relative;
+                top:145px;
+                color:#ffffff;
+            }
+        }
+        
+    }
+    .card:hover{
+        .card-curved-footer{
+            display: block;
+        }
+    }
+}
+
+    //services
+
+.home-services{
+    .app-card-flat{
+        color:#ffffff;
+        margin-bottom: 40px;
+        .app-card-body{
+            padding:20px;
+        }
+        .btn-round-wrapper{
+            height: 0px;
+        }
+        .btn-round{
+            background-color: #ffffff;
+            color:$primary-color;
+            border:none;
+            font-size: 24px;
+            padding-top: 7px;
+            margin-top:10px;
+        }
+    }
+    .btn-bar{
+        margin:30px 0px;
+    }
+    .app-card-flat:hover{
+        .btn-round{
+            background-color:$accent-dark-color;
+            color:#ffffff;
+            font-size: 24px;
+            padding-top: 7px;
+        }
+    }
+}
+
+    // Discover
+.home-discover{
+    .row{
+        padding:30px 0px;
+    }
+    .tab-controls{
+        .btn{
+            margin-bottom: 20px;
+        }
+    }
+    .video-wrapper{
+        iframe{
+            height: 300px;
         }
     }
 }
 
     //media query
+
+@media (min-width: 576px){
+    .slider-overlapped-cards{
+        position: relative;
+        margin-top: -200px;
+        .container{
+            padding: 0px 80px;
+        }
+        .card{
+            .card-body{
+                line-height: 42px;
+                overflow-wrap: normal;
+                padding-top:30px;
+                padding-bottom:40px;
+                img{
+                    height: 126px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .slider-overlapped-cards{
+        
+        .container{
+            padding: 0px 80px;
+        }
+        .card{
+            .card-body{
+                
+            }
+        }
+    }
+    .home-discover{
+        .video-wrapper{
+            iframe{
+                
+            }
+        }
+    }
+}
 @media (min-width: 992px){
+    .section-intro{
+        padding:40px 0px;
+    }
     .home-slider{
         top:0px;
         .carousel-item{
+            background-size: cover;
             height: 650px;
+            padding-top:0px;    
+            .slider-title{
+                font-size: 52px;
+            }
         }
     }
 
     .slider-overlapped-cards{
         position: relative;
-        top: -300px;
+        margin-top: -300px;
+        .card{
+            .card-body{
+                line-height: 42px;
+                overflow-wrap: normal;
+                padding-top:30px;
+                padding-bottom:40px;
+                img{
+                    height: 126px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
     }
 }
