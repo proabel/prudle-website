@@ -38,10 +38,15 @@ body, p, span, li, a, div, section, table, button, input{
 .txt-dark, .text-dark{
     color: $dark;
 }
+.text-white{
+    color:#ffffff;
+}
 .text-almost-dark{
     color: $almost-dark;
 }
-
+.text-accent-dark{
+    color:$accent-dark-color;
+}
 @media (min-width: 576px) {
     .text-small{
         font-size: .85rem;

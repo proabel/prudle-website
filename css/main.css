@@ -89,8 +89,14 @@ body, p, span, li, a, div, section, table, button, input {
 .txt-dark, .text-dark {
   color: #333333; }
 
+.text-white {
+  color: #ffffff; }
+
 .text-almost-dark {
   color: #464646; }
+
+.text-accent-dark {
+  color: #CEA211; }
 
 @media (min-width: 576px) {
   .text-small {
@@ -107,6 +113,14 @@ body, p, span, li, a, div, section, table, button, input {
 
   .spread {
     letter-spacing: .21px; } }
+.btn-accent {
+  background-color: #CEA211;
+  color: #ffffff; }
+
+.btn-long {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
 .app-icon {
   width: 18px;
   height: 18px;
@@ -289,6 +303,13 @@ body, p, span, li, a, div, section, table, button, input {
       top: 0px;
       width: 100%; } }
 
+.footer-wrapper {
+  color: #ffffff;
+  padding: 40px;
+  background: transparent url("../images/footer_wm.svg") 0% 0% no-repeat padding-box; }
+  .footer-wrapper .copyrights {
+    padding-top: 40px; }
+
 .no-hover {
   pointer-events: none; }
 
@@ -314,6 +335,9 @@ body, p, span, li, a, div, section, table, button, input {
 
 .btn-bar .btn {
   margin: 0px 20px 20px 0px; }
+
+.section-intro {
+  padding: 30px 0px; }
 
 .mock-main {
   display: block;
@@ -418,6 +442,43 @@ body, p, span, li, a, div, section, table, button, input {
 .home-discover .video-wrapper iframe {
   height: 300px; }
 
+.home-blogs .blog-body {
+  margin-bottom: 20px; }
+  .home-blogs .blog-body img {
+    width: 99%; }
+  .home-blogs .blog-body .btn-link {
+    padding-left: 0px;
+    border-bottom: 2px solid #CEA211; }
+
+.home-lets-talk {
+  padding-top: 30px; }
+  .home-lets-talk .lets-talk-wrapper {
+    background: transparent url("../images/smwm.png") 0% 0% no-repeat padding-box; }
+
+.home-case-studies .app-card-wrapper .app-card-body {
+  padding-top: 200px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px; }
+.home-case-studies .app-card-wrapper .bordered-content {
+  padding: 20px;
+  padding-bottom: 0px; }
+.home-case-studies .app-card-wrapper .footer-content {
+  border-top: 1px solid #ccc;
+  padding-top: 10px; }
+.home-case-studies .app-card-wrapper .case-study1 {
+  background: url("../images/casestudies/casestudy1.png") top center no-repeat;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0); }
+.home-case-studies .app-card-wrapper .case-study2 {
+  background: url("../images/casestudies/casestudy3.png") top center no-repeat;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0); }
+.home-case-studies .app-card-wrapper .case-study3 {
+  background: url("../images/casestudies/casestudy1.png") top center no-repeat;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0); }
+
 @media (min-width: 576px) {
   .slider-overlapped-cards {
     position: relative;
@@ -431,13 +492,19 @@ body, p, span, li, a, div, section, table, button, input {
       padding-bottom: 40px; }
       .slider-overlapped-cards .card .card-body img {
         height: 126px;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+
+  .home-case-studies .app-card-wrapper .app-card-body {
+    padding-top: 300px; } }
 @media (min-width: 768px) {
   .slider-overlapped-cards .container {
-    padding: 0px 80px; } }
+    padding: 0px 80px; }
+
+  .home-case-studies .app-card-wrapper .app-card-body {
+    padding-top: 400px; } }
 @media (min-width: 992px) {
   .section-intro {
-    padding: 40px 0px; }
+    padding: 60px 0px; }
 
   .home-slider {
     top: 0px; }
@@ -458,6 +525,9 @@ body, p, span, li, a, div, section, table, button, input {
       padding-bottom: 40px; }
       .slider-overlapped-cards .card .card-body img {
         height: 126px;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+
+  .home-case-studies .app-card-wrapper .app-card-body {
+    padding-top: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
