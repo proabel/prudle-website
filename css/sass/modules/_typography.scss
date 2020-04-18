@@ -30,8 +30,14 @@ body, p, span, li, a, div, section, table, button, input{
     letter-spacing: .21px;
 }
 
+.no-decor{
+    text-decoration: none;
+}
+.no-decor:hover{
+    text-decoration: none;
+}
 //color
-body{
+body, .btn-light{
     color: $almost-dark;
 }
 .text-primary, .app-text-primary{
@@ -50,6 +56,12 @@ body{
 .text-accent-dark{
     color:$accent-dark-color;
 }
+.text-grey-1{
+    color: $grey-1;
+}
+.text-grey-2{
+    color: $grey-2;
+}
 @media (min-width: 576px) {
     .text-small{
         font-size: .85rem;
@@ -66,6 +78,13 @@ body{
     .spread{
         letter-spacing: .21px;
     }
+
+    .spread2{
+        letter-spacing: .64px;
+    }
+    .spread3{
+        letter-spacing: 1.34px;
+    }
 }
 @media (min-width: 992px) {
     .text-small{
@@ -77,8 +96,14 @@ body{
     .text-big{
         font-size: 1.3rem;
     }
+    .text-big-1-5{
+        font-size: 1.5rem;
+    }
     .text-big2{
         font-size: 1.8rem;
+    }
+    .text-big3{
+        font-size: 2rem;
     }
     .text-large{
         font-size: 2.5rem;
@@ -89,5 +114,8 @@ body{
 
     .spread2{
         letter-spacing: .64px;
+    }
+    .spread3{
+        letter-spacing: 1.34px;
     }
 }

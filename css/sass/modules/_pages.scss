@@ -14,16 +14,55 @@
 .no-border{
     border: none;   
 }
-
+.no-bulletin{
+    list-style: none;
+}
 .drop-shadow{
     box-shadow: 6px 6px 20px #00000029;
 }
 .drop-shadow2{ box-shadow: 0px 8px 6px #00000029; }
+.drop-shadow3{ box-shadow: 0px 3px 6px #00000029; }
+.drop-shadow4{ box-shadow: -6px -6px 20px #00000029; }
+
 
 .section-intro{
     padding:30px 0px;
     .section-title{
         color: $grey-1;
+    }
+}
+.carousel-dots-wrapper{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    padding:20px;
+}
+.carousel-dots{
+    display: flex;
+    li{
+        display: inline-flex;
+        height: 8px;
+        width: 8px;
+        background-color: $primary-color;
+        opacity: 0.5;
+        border-radius: 50%;
+        margin:3px;
+    }
+    li.active, li:hover{
+        height:13px;
+        width:13px;
+        opacity: 1;
+    }
+}
+ul.star-rating-wrapper{
+    display: flex;
+    li.star-rating{
+        list-style: none;  
+        color: $unstar-color; 
+        padding-right:5px; 
+    }
+    li.star-rating.stared{
+        color: $star-color;
     }
 }
 // .line-height-close{
@@ -143,11 +182,12 @@
     //services
 
 .home-services{
+    padding-bottom:70px;
     .app-card-flat{
         color:#ffffff;
         margin-bottom: 40px;
         .app-card-body{
-            padding:20px;
+            padding:35px;
         }
         .btn-round-wrapper{
             height: 0px;
@@ -162,7 +202,7 @@
         }
     }
     .btn-bar{
-        margin:30px 0px;
+        margin: 60px 0px 30px 0px;
     }
     .app-card-flat:hover{
         .btn-round{
@@ -176,17 +216,30 @@
 
     // Discover
 .home-discover{
-    .row{
-        padding:30px 0px;
+    padding-bottom:180px;
+    .row.section-intro{
+        padding:100px 0px 80px 0px;
     }
     .tab-controls{
         .btn{
             margin-bottom: 20px;
+            background-color: #ffffff;
         }
+        .btn:hover{
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+        // .btn-light{
+        //     background-color: #ffffff;
+        // }
+    }
+    .tab-content-row{
+        margin-top:80px;
     }
     .video-wrapper{
+        padding-right:40px;
         iframe{
-            height: 300px;
+            height: 350px;
         }
     }
 }
@@ -194,14 +247,27 @@
     // blogs
 
 .home-blogs{
+    padding-bottom:100px;
     .blog-body{
         margin-bottom:20px;
+        padding-right:35px;
         img{
             width:99%;
         }
         .btn-link{
             padding-left: 0px;
             border-bottom: 2px solid $accent-dark-color;
+        }
+        .btn-link:hover{
+            text-decoration: none;
+        }
+    }
+    .blog-body:nth-child(3){
+        padding-right: 0px;
+    }
+    .date{
+        i{
+            font-size: 1.2rem;
         }
     }
 }
@@ -210,8 +276,12 @@
 
 .home-lets-talk{
     padding-top:30px;
+    .container-fluid{
+        padding-right:5%;
+        padding-left:5%;
+    }
     .lets-talk-wrapper{
-        background: transparent url('../images/smwm.png') 0% 0% no-repeat padding-box;
+        background: url('../images/smwm.png') right top no-repeat;
         //background: transparent url('../images/footer_wm.svg') 0% 0% no-repeat padding-box;
     }
 }
@@ -219,24 +289,38 @@
     //Case Studies
 
 .home-case-studies{
+    padding-bottom:80px;
     .app-card-wrapper{
         .app-card-body{
             padding-top:200px;
             border-radius: 20px;
-            border:1px solid #ccc;
+            //border:1px solid $grey-2;
             margin-bottom:20px;
         }
         .bordered-content{
             //border-radius: 0px 0px 20px 20px ;
-            padding: 20px;
+            //padding: 20px;
             padding-bottom: 0px;
             // border-bottom:1px solid #ccc;
             // border-left:1px solid #ccc;
             // border-right:1px solid #ccc;
         }
         .footer-content{
-            border-top: 1px solid #ccc;
+            border-top: 2px solid #eeeeee;
             padding-top:10px;
+            //padding-bottom:10px;
+            p{
+                padding-bottom: 20px;
+            }
+        }
+        .case-title{
+            padding:20px;
+            padding-top:40px;
+            height: 115px;
+        }
+        .case-desc{
+            padding:20px;
+            height: 160px;
         }
         .case-study1{
             background: url('../images/casestudies/casestudy1.png') top center no-repeat; 
@@ -254,7 +338,46 @@
             background-color: rgba(0,0,0,0);  
         }
     }
+    
 }
+
+    //testimonials
+
+.home-testimonials{
+    padding-bottom:60px;
+    .testimonial-wrapper{
+        padding-right: 30px;
+        padding-left: 30px;
+        .testimonial-content{
+
+            background-color: #ffffff;
+            border-radius: 7px;
+            padding:35px;
+            padding-bottom: 45px;
+        }
+        .testimonial-header{
+            img{
+                width:92px;
+                height:92px;
+            }
+            .star-rating-wrapper{
+                padding-top: 15px;
+            }
+            .person-detail{
+                padding-left:30px;
+                span{
+                    padding:0px 7px;
+                }
+            }
+        }
+        .testimonial-text{
+            padding-top:20px;
+        }
+    }
+    .carousel-dots-wrapper{
+        margin-top:40px;
+    }
+}    
     //media query
 
 @media (min-width: 576px){
