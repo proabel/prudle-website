@@ -1,4 +1,24 @@
+/**** Resetting Grid options to be a bit wider  *****/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@media (min-width: 544px) {
+  .container {
+    max-width: 576px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+/***********************End Reset********************/
 .scrolling-wrapper-flexbox {
   display: flex;
   flex-wrap: nowrap;
@@ -69,7 +89,7 @@ body, p, span, li, a, div, section, table, button, input {
   text-align: center; }
 
 .text-small {
-  font-size: .85rem; }
+  font-size: .92rem; }
 
 .text-big {
   font-size: 1.1rem; }
@@ -83,11 +103,14 @@ body, p, span, li, a, div, section, table, button, input {
 .spread {
   letter-spacing: .21px; }
 
+body {
+  color: #464646; }
+
 .text-primary, .app-text-primary {
   color: #0D59CA; }
 
 .txt-dark, .text-dark {
-  color: #333333; }
+  color: #464646; }
 
 .text-white {
   color: #ffffff; }
@@ -101,6 +124,24 @@ body, p, span, li, a, div, section, table, button, input {
 @media (min-width: 576px) {
   .text-small {
     font-size: .85rem; }
+
+  .text-big {
+    font-size: 1.5rem; }
+
+  .text-big2 {
+    font-size: 2rem; }
+
+  .text-large {
+    font-size: 2.5rem; }
+
+  .spread {
+    letter-spacing: .21px; } }
+@media (min-width: 992px) {
+  .text-small {
+    font-size: .92rem; }
+
+  .text-small2 {
+    font-size: .88rem; }
 
   .text-big {
     font-size: 1.5rem; }
@@ -222,6 +263,8 @@ body, p, span, li, a, div, section, table, button, input {
     margin-top: 10px; }
     .header-wrapper .header-info .header-info-text {
       padding-left: 10px; }
+      .header-wrapper .header-info .header-info-text .header-info-text-body {
+        color: #6E6E6E; }
   .header-wrapper .lang-text {
     padding-left: 20px; }
   .header-wrapper .nav-item {
@@ -275,6 +318,8 @@ body, p, span, li, a, div, section, table, button, input {
     .header-wrapper .app-sticky-top .navbar-toggler i {
       color: #0D59CA; }
   @media (min-width: 992px) {
+    .header-wrapper .header-top .navbar {
+      height: 140px; }
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem .5rem; }
     .header-wrapper .header-info-wrapper {
@@ -294,6 +339,8 @@ body, p, span, li, a, div, section, table, button, input {
       .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand {
         padding-top: 0px; } }
   @media (min-width: 1200px) {
+    .header-wrapper .header-top .navbar-brand {
+      padding-right: 24px; }
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem 1rem; }
     .header-wrapper .header-info-wrapper {

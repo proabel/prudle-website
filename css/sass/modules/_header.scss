@@ -28,6 +28,9 @@
         margin-top:10px;
         .header-info-text{
             padding-left: 10px;
+            .header-info-text-body{
+                color:$grey-1;
+            }
         }
     }
     .lang-text{
@@ -116,6 +119,11 @@
 
     // Overrides
     @media (min-width: 992px){
+        .header-top{
+            .navbar{
+                height: 140px;
+            }
+        }
         .navbar-expand-lg .navbar-nav .nav-link {
             padding: .5rem .5rem;
         }
@@ -147,6 +155,9 @@
         
     }
     @media (min-width: 1200px){
+        .header-top .navbar-brand{
+            padding-right:24px;
+        }
         .navbar-expand-lg .navbar-nav .nav-link {
             padding: .5rem 1rem;
         }

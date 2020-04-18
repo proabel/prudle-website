@@ -15,7 +15,7 @@ body, p, span, li, a, div, section, table, button, input{
 
 // sizes
 .text-small{
-    font-size: .85rem;
+    font-size: .92rem;
 }
 .text-big{
     font-size: 1.1rem;
@@ -31,12 +31,15 @@ body, p, span, li, a, div, section, table, button, input{
 }
 
 //color
+body{
+    color: $almost-dark;
+}
 .text-primary, .app-text-primary{
     color: $primary-color;
 }
 //todo remove .txt in all pages
 .txt-dark, .text-dark{
-    color: $dark;
+    color: $almost-dark;
 }
 .text-white{
     color:#ffffff;
@@ -50,6 +53,26 @@ body, p, span, li, a, div, section, table, button, input{
 @media (min-width: 576px) {
     .text-small{
         font-size: .85rem;
+    }
+    .text-big{
+        font-size: 1.5rem;
+    }
+    .text-big2{
+        font-size: 2rem;
+    }
+    .text-large{
+        font-size: 2.5rem;
+    }
+    .spread{
+        letter-spacing: .21px;
+    }
+}
+@media (min-width: 992px) {
+    .text-small{
+        font-size: .92rem;
+    }
+    .text-small2{
+        font-size: .88rem;
     }
     .text-big{
         font-size: 1.5rem;
