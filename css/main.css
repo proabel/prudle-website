@@ -409,6 +409,12 @@ body, .btn-light {
       top: 0px;
       width: 100%; } }
 
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1; }
+
 .footer-wrapper {
   color: #ffffff;
   padding: 40px;
@@ -503,6 +509,12 @@ ul.star-rating-wrapper {
     padding-right: 5px; }
   ul.star-rating-wrapper li.star-rating.stared {
     color: #FDC668; }
+
+main {
+  margin-bottom: 440px;
+  position: relative;
+  z-index: 5;
+  background-color: #ffffff; }
 
 .mock-main {
   display: block;
