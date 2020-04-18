@@ -18,18 +18,13 @@
 .drop-shadow{
     box-shadow: 6px 6px 20px #00000029;
 }
-.btn-round{
-    width:50px;
-    height: 50px;
-    border-radius: 100%;
-}
-.btn-bar{
-    .btn{
-        margin:0px 20px 20px 0px;
-    }
-}
+.drop-shadow2{ box-shadow: 0px 8px 6px #00000029; }
+
 .section-intro{
     padding:30px 0px;
+    .section-title{
+        color: $grey-1;
+    }
 }
 // .line-height-close{
 //     line-height: 1.2em;
@@ -59,14 +54,17 @@
     z-index: 1;
     .carousel-item{
         padding-top:96px;
-        height: 500px;
+        height: 700px;
         background-size: 1100px;
         background-repeat: no-repeat;
         background-position: center top;
         .slider-title{
+            padding-top:90px;
+            margin:0px;
+            padding-bottom:40px;
             font-weight: 600;
             color: #ffffff;
-            padding: .8em;
+            //padding: .8em;
             line-height: 1.3em;
         }
         .slider-btn{
@@ -90,12 +88,13 @@
     position: relative;
     margin-top: -150px;
     z-index: 10;
-    .container{
-        padding: 0px 40px;
-    }
+    // .container{
+    //     padding: 0px 40px;
+    // }
     .card{
         margin-bottom:20px;
         background: none;
+        height: 450px;
         .card-body{
             position: relative;
             margin:0px 10px;
@@ -124,6 +123,13 @@
                 top:145px;
                 color:#ffffff;
             }
+        }
+        button.btn.btn-outline-dark{
+            font-size: 24px;
+            padding: 0px 14px;
+            border: 1px solid $almost-dark;
+            box-shadow: 3px 3px 6px #00000029;
+            //color:$grey1;
         }
         
     }
@@ -255,9 +261,9 @@
     .slider-overlapped-cards{
         position: relative;
         margin-top: -200px;
-        .container{
-            padding: 0px 80px;
-        }
+        // .container{
+        //     padding: 0px 80px;
+        // }
         .card{
             .card-body{
                 line-height: 42px;
@@ -285,9 +291,9 @@
 @media (min-width: 768px){
     .slider-overlapped-cards{
         
-        .container{
-            padding: 0px 80px;
-        }
+        // .container{
+        //     padding: 0px 80px;
+        // }
         .card{
             .card-body{
                 
@@ -319,7 +325,7 @@
         top:0px;
         .carousel-item{
             background-size: cover;
-            height: 650px;
+            height: 750px;
             padding-top:0px;    
             .slider-title{
                 font-size: 52px;
@@ -331,16 +337,21 @@
         position: relative;
         margin-top: -300px;
         .card{
+            margin-right:30px;
+            
             .card-body{
                 line-height: 42px;
                 overflow-wrap: normal;
-                padding-top:30px;
-                padding-bottom:40px;
+                padding:35px;
+                padding-bottom:45px;
                 img{
                     height: 126px;
                     padding-bottom: 20px;
                 }
             }
+        }
+        .card:nth-child(3){
+            margin-right:0px;
         }
     }
 

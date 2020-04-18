@@ -144,23 +144,34 @@ body {
     font-size: .88rem; }
 
   .text-big {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
 
   .text-big2 {
-    font-size: 2rem; }
+    font-size: 1.8rem; }
 
   .text-large {
     font-size: 2.5rem; }
 
   .spread {
-    letter-spacing: .21px; } }
+    letter-spacing: .21px; }
+
+  .spread2 {
+    letter-spacing: .64px; } }
 .btn-accent {
   background-color: #CEA211;
   color: #ffffff; }
 
 .btn-long {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem; }
+  font-size: 1.38rem;
+  padding: 1rem 2.4rem; }
+
+.btn-round {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%; }
+
+.btn-bar .btn {
+  margin: 0px 20px 20px 0px; }
 
 .app-icon {
   width: 18px;
@@ -258,6 +269,8 @@ body {
     left: 0px; }
     .header-wrapper .header-bottom a {
       color: #ffffff; }
+  .header-wrapper .header-info-wrapper {
+    overflow: visible; }
   .header-wrapper .header-info {
     display: flex;
     margin-top: 10px; }
@@ -295,7 +308,7 @@ body {
     .header-wrapper .header-search.input-group input.form-control {
       border-radius: 0px;
       border: none;
-      height: 65px;
+      height: 75px;
       background: #116AD8;
       color: #efefef;
       padding: 0px 0px 0px 1.2rem; }
@@ -309,7 +322,7 @@ body {
   .header-wrapper .app-sticky-top {
     position: fixed;
     top: 0px;
-    height: 82px;
+    height: 75px;
     width: 100%;
     display: none;
     background: #ffffff; }
@@ -330,21 +343,29 @@ body {
       position: relative;
       top: 0px;
       width: 100%; }
+      .header-wrapper .header-bottom .navbar-nav {
+        height: 75px; }
+        .header-wrapper .header-bottom .navbar-nav .nav-item {
+          padding: 1rem .7rem; }
     .header-wrapper .app-sticky-top {
       top: -200px; }
     .header-wrapper .header-bottom-sticky-wrapper {
       display: none; }
       .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav {
         height: 70px; }
+      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .nav-item-brand {
+        padding-top: .75rem; }
       .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand {
         padding-top: 0px; } }
   @media (min-width: 1200px) {
     .header-wrapper .header-top .navbar-brand {
-      padding-right: 24px; }
+      padding-right: 40px; }
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem 1rem; }
     .header-wrapper .header-info-wrapper {
       width: inherit; }
+    .header-wrapper .header-info {
+      margin-right: 50px; }
     .header-wrapper .header-bottom {
       position: relative;
       top: 0px;
@@ -375,16 +396,13 @@ body {
 .drop-shadow {
   box-shadow: 6px 6px 20px #00000029; }
 
-.btn-round {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%; }
-
-.btn-bar .btn {
-  margin: 0px 20px 20px 0px; }
+.drop-shadow2 {
+  box-shadow: 0px 8px 6px #00000029; }
 
 .section-intro {
   padding: 30px 0px; }
+  .section-intro .section-title {
+    color: #6E6E6E; }
 
 .mock-main {
   display: block;
@@ -404,14 +422,16 @@ body {
   z-index: 1; }
   .home-slider .carousel-item {
     padding-top: 96px;
-    height: 500px;
+    height: 700px;
     background-size: 1100px;
     background-repeat: no-repeat;
     background-position: center top; }
     .home-slider .carousel-item .slider-title {
+      padding-top: 90px;
+      margin: 0px;
+      padding-bottom: 40px;
       font-weight: 600;
       color: #ffffff;
-      padding: .8em;
       line-height: 1.3em; }
     .home-slider .carousel-item .slider-btn {
       margin-right: 10px;
@@ -427,11 +447,10 @@ body {
   position: relative;
   margin-top: -150px;
   z-index: 10; }
-  .slider-overlapped-cards .container {
-    padding: 0px 40px; }
   .slider-overlapped-cards .card {
     margin-bottom: 20px;
-    background: none; }
+    background: none;
+    height: 450px; }
     .slider-overlapped-cards .card .card-body {
       position: relative;
       margin: 0px 10px;
@@ -457,6 +476,11 @@ body {
         position: relative;
         top: 145px;
         color: #ffffff; }
+    .slider-overlapped-cards .card button.btn.btn-outline-dark {
+      font-size: 24px;
+      padding: 0px 14px;
+      border: 1px solid #464646;
+      box-shadow: 3px 3px 6px #00000029; }
   .slider-overlapped-cards .card:hover .card-curved-footer {
     display: block; }
 
@@ -530,8 +554,6 @@ body {
   .slider-overlapped-cards {
     position: relative;
     margin-top: -200px; }
-    .slider-overlapped-cards .container {
-      padding: 0px 80px; }
     .slider-overlapped-cards .card .card-body {
       line-height: 42px;
       overflow-wrap: normal;
@@ -544,9 +566,6 @@ body {
   .home-case-studies .app-card-wrapper .app-card-body {
     padding-top: 300px; } }
 @media (min-width: 768px) {
-  .slider-overlapped-cards .container {
-    padding: 0px 80px; }
-
   .home-case-studies .app-card-wrapper .app-card-body {
     padding-top: 400px; } }
 @media (min-width: 992px) {
@@ -557,7 +576,7 @@ body {
     top: 0px; }
     .home-slider .carousel-item {
       background-size: cover;
-      height: 650px;
+      height: 750px;
       padding-top: 0px; }
       .home-slider .carousel-item .slider-title {
         font-size: 52px; }
@@ -565,14 +584,18 @@ body {
   .slider-overlapped-cards {
     position: relative;
     margin-top: -300px; }
-    .slider-overlapped-cards .card .card-body {
-      line-height: 42px;
-      overflow-wrap: normal;
-      padding-top: 30px;
-      padding-bottom: 40px; }
-      .slider-overlapped-cards .card .card-body img {
-        height: 126px;
-        padding-bottom: 20px; }
+    .slider-overlapped-cards .card {
+      margin-right: 30px; }
+      .slider-overlapped-cards .card .card-body {
+        line-height: 42px;
+        overflow-wrap: normal;
+        padding: 35px;
+        padding-bottom: 45px; }
+        .slider-overlapped-cards .card .card-body img {
+          height: 126px;
+          padding-bottom: 20px; }
+    .slider-overlapped-cards .card:nth-child(3) {
+      margin-right: 0px; }
 
   .home-case-studies .app-card-wrapper .app-card-body {
     padding-top: 200px; } }
