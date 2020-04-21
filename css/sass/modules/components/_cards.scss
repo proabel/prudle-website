@@ -1,0 +1,35 @@
+.rounded-card-wrapper{
+    .rounded-card-body{
+        padding-top:200px;
+        border-radius: 20px;
+        //border:1px solid $grey-2;
+        margin-bottom:20px;
+        // /overflow: hidden;
+    }
+    .rounded-card-body:hover{
+        .footer-content{
+            background-color: $primary-color;
+            a.app-text-primary{
+                color: #ffffff;
+            }
+        }
+    }
+    .bordered-content{
+        //border-radius: 0px 0px 20px 20px ;
+        //padding: 20px;
+        padding-bottom: 0px;
+        // border-bottom:1px solid #ccc;
+        // border-left:1px solid #ccc;
+        // border-right:1px solid #ccc;
+    }
+    .footer-content{
+        border-top: 2px solid #eeeeee;
+        padding-top:10px;
+
+        border-radius: 0px 0px 20px 20px;
+        //padding-bottom:10px;
+        p{
+            padding-bottom: 20px;
+        }
+    }
+}

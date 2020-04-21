@@ -1,0 +1,402 @@
+
+/******** LANDING PAGE  **************/
+/*************************************/
+
+    // Slider
+
+    .home-slider{
+        //background-color: #072A9F;
+        position: relative; 
+        top:-96px; //changes in bigger screens
+        z-index: 1;
+        .carousel-item{
+            padding-top:96px;
+            height: 700px;
+            background-size: 1100px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            .slider-title{
+                padding-top:90px;
+                margin:0px;
+                padding-bottom:40px;
+                font-weight: 600;
+                color: #ffffff;
+                //padding: .8em;
+                line-height: 1.3em;
+            }
+            .slider-btn{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                ion-icon{
+                    position: relative;
+                    top:3px;
+                    left: 3px;
+                }
+            }
+        }
+        .slider1{
+            background-image: url('../images/homesliders/bettertranslate.png');
+        }
+    }
+    
+        //  slider overlap cards
+    
+    .slider-overlapped-cards{
+        position: relative;
+        margin-top: -150px;
+        z-index: 10;
+        // .container{
+        //     padding: 0px 40px;
+        // }
+        .card{
+            margin-bottom:20px;
+            background: none;
+            height: 450px;
+            .card-body{
+                position: relative;
+                margin:0px 10px;
+                z-index: 12;
+                line-height: 2rem;
+                overflow-wrap: normal;
+                padding-top:30px;
+                padding-bottom:40px;
+                background-color: #ffffff;
+                img{
+                    height: 126px;
+                    padding-bottom: 20px;
+                }
+            }
+            .card-curved-footer{
+                display: none;
+                padding-bottom: 60px;
+                margin:0px 70px;
+                border-radius: 50%;
+                position: relative;
+                margin-top:-130px;
+                z-index: 11;
+                height: 200px;
+                a{
+                    position: relative;
+                    top:145px;
+                    color:#ffffff;
+                }
+            }
+            button.btn.btn-outline-dark{
+                font-size: 24px;
+                padding: 0px 14px;
+                border: 1px solid $almost-dark;
+                box-shadow: 3px 3px 6px #00000029;
+                //color:$grey1;
+            }
+            
+        }
+        .card:hover{
+            .card-curved-footer{
+                display: block;
+            }
+        }
+    }
+    
+        //services
+    
+    .home-services{
+        padding-bottom:70px;
+        .app-card-flat{
+            color:#ffffff;
+            margin-bottom: 40px;
+            .app-card-body{
+                padding:35px;
+            }
+            .btn-round-wrapper{
+                height: 0px;
+            }
+            .btn-round{
+                background-color: #ffffff;
+                color:$primary-color;
+                border:none;
+                font-size: 24px;
+                padding-top: 7px;
+                margin-top:10px;
+    
+            }
+            .hover-show{
+                display: none;
+            }
+            .hover-hide{
+                display: inline-flex;
+            }
+        }
+        .btn-bar{
+            margin: 60px 0px 30px 0px;
+        }
+        .app-card-flat:hover{
+            .btn-round{
+                background-color:$accent-dark-color;
+                color:#ffffff;
+                font-size: 24px;
+                padding-top: 7px;
+                animation: ripple-accent 0.7s linear infinite;
+            }
+            .hover-show{
+                display: inline-flex;
+            }
+            .hover-hide{
+                display: none;
+            }
+        }
+    }
+    
+        // Discover
+    .home-discover{
+        padding-bottom:180px;
+        .row.section-intro{
+            padding:100px 0px 80px 0px;
+        }
+        .tab-controls{
+            .btn{
+                margin-bottom: 20px;
+                background-color: #ffffff;
+            }
+            .btn:hover{
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+            // .btn-light{
+            //     background-color: #ffffff;
+            // }
+        }
+        .tab-content-row{
+            margin-top:80px;
+        }
+        .video-wrapper{
+            padding-right:40px;
+            iframe{
+                height: 350px;
+            }
+        }
+    }
+    
+        // blogs
+    
+    .home-blogs{
+        padding-bottom:100px;
+        .blog-body{
+            margin-bottom:20px;
+            padding-right:35px;
+            img{
+                width:99%;
+            }
+            .btn-link{
+                padding-left: 0px;
+                //border-bottom: 2px solid $accent-dark-color;
+            }
+            .btn-link:hover{
+                text-decoration: none;
+            }
+        }
+        .blog-body:nth-child(3){
+            padding-right: 0px;
+        }
+        .date{
+            i{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+        //Lets Talk
+    
+    .home-lets-talk{
+        padding-top:30px;
+        .container-fluid{
+            padding-right:5%;
+            padding-left:5%;
+        }
+        .lets-talk-wrapper{
+            background: url('../images/smwm.png') right top no-repeat;
+            //background: transparent url('../images/footer_wm.svg') 0% 0% no-repeat padding-box;
+        }
+    }
+    
+        //Case Studies
+    
+    .home-case-studies{
+        padding-bottom:80px;
+        .rounded-card-wrapper{
+            .case-title{
+                padding:20px;
+                padding-top:40px;
+                height: 115px;
+            }
+            .case-desc{
+                padding:20px;
+                height: 160px;
+            }
+            .case-study1{
+                background: url('../images/casestudies/casestudy1.png') top center no-repeat; 
+                background-size: 100%;
+                background-color: rgba(0,0,0,0);  
+            }
+            .case-study2{
+                background: url('../images/casestudies/casestudy3.png') top center no-repeat; 
+                background-size: 100%;
+                background-color: rgba(0,0,0,0);  
+            }
+            .case-study3{
+                background: url('../images/casestudies/casestudy1.png') top center no-repeat; 
+                background-size: 100%;
+                background-color: rgba(0,0,0,0);  
+            }
+        }
+        .carousel-dots-wrapper{
+            margin-top:20px;
+        }
+        
+    }
+    
+        //testimonials
+    
+    .home-testimonials{
+        padding-bottom:60px;
+        .testimonial-wrapper{
+            padding-right: 30px;
+            padding-left: 30px;
+            .testimonial-content{
+    
+                background-color: #ffffff;
+                border-radius: 7px;
+                padding:35px;
+                padding-bottom: 45px;
+            }
+            .testimonial-header{
+                img{
+                    width:92px;
+                    height:92px;
+                }
+                .star-rating-wrapper{
+                    padding-top: 15px;
+                }
+                .person-detail{
+                    padding-left:30px;
+                    span{
+                        padding:0px 7px;
+                    }
+                }
+            }
+            .testimonial-text{
+                padding-top:20px;
+            }
+        }
+        .carousel-dots-wrapper{
+            margin-top:40px;
+        }
+    }    
+        //media query
+    
+    @media (min-width: 576px){
+        .slider-overlapped-cards{
+            position: relative;
+            margin-top: -200px;
+            // .container{
+            //     padding: 0px 80px;
+            // }
+            .card{
+                .card-body{
+                    line-height: 42px;
+                    overflow-wrap: normal;
+                    padding-top:30px;
+                    padding-bottom:40px;
+                    img{
+                        height: 126px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    
+        .home-case-studies{
+            .app-card-wrapper{
+                .app-card-body{
+                    padding-top:300px;
+                    
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 768px){
+        .slider-overlapped-cards{
+            
+            // .container{
+            //     padding: 0px 80px;
+            // }
+            .card{
+                .card-body{
+                    
+                }
+            }
+        }
+        .home-discover{
+            .video-wrapper{
+                iframe{
+                    
+                }
+            }
+        }
+    
+        .home-case-studies{
+            .app-card-wrapper{
+                .app-card-body{
+                    padding-top:400px;
+                    
+                }
+            }
+        }
+    }
+    @media (min-width: 992px){
+        .section-intro{
+            padding:60px 0px;
+        }
+        .home-slider{
+            top:0px;
+            .carousel-item{
+                background-size: cover;
+                height: 750px;
+                padding-top:0px;    
+                .slider-title{
+                    font-size: 52px;
+                }
+            }
+        }
+    
+        .slider-overlapped-cards{
+            position: relative;
+            margin-top: -300px;
+            .card{
+                margin-right:30px;
+                
+                .card-body{
+                    line-height: 42px;
+                    overflow-wrap: normal;
+                    padding:35px;
+                    padding-bottom:45px;
+                    img{
+                        height: 126px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .card:nth-child(3){
+                margin-right:0px;
+            }
+        }
+    
+        .home-case-studies{
+            .app-card-wrapper{
+                .app-card-body{
+                    padding-top:200px;
+                    
+                }
+            }
+        }
+    }
