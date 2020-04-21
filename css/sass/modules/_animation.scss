@@ -71,6 +71,7 @@
   }
   
   //underline from left thin orange
+  // todo make generic name than just menu
   .menu-accent-2px .hvr-underline-from-left:before {
     background:$accent-color;
     height: 2px;
@@ -103,3 +104,53 @@
     transform: translateY(-16px);
   }
   
+  // ripple on hover
+
+  .hover-ripple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: #BE5869;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 10px 10px 33px #403A3E;
+    outline: none;
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        border: 2px solid rgba(#403A3E, 0.7);
+        filter: blur(0);
+        transform-origin: 50%;
+        z-index: -1;
+    }
+    &:hover {
+        &:before,
+        &:after{
+            border-color: transparent;
+            filter: blur(2px);
+            transform: scale(4);
+            transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease;
+        }
+        &:after {
+            transition-delay: 100ms;
+        }
+    }
+}
+
+@keyframes ripple-accent {
+  0% {
+    box-shadow: 0 0 0 0 rgba($accent-dark-color, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba($accent-dark-color, 0.0);
+  }
+}

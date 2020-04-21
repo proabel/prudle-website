@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/ace82d9331.js" crossorigin="anonymous"></script>
@@ -113,7 +114,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products
                   </a>
-                  <div class="dropdown-menu fadeInUp animated faster2x" aria-labelledby="productsDropdown">
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
                     <a class="dropdown-item menu-accent-2px" href="#">
                       <span class="hvr-underline-from-left">P-I18N</span>
                     </a>
@@ -129,7 +130,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Company
                   </a>
-                  <div class="dropdown-menu fadeInUp animated faster2x" aria-labelledby="productsDropdown">
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
                     <a class="dropdown-item menu-accent-2px" href="#">
                       <span class="hvr-underline-from-left">About Us</span>
                     </a>
@@ -189,7 +190,7 @@
           </div>
         </div>
         <!-- end bottom header -->
-        <nav class="navbar  app-sticky-top drop-shadow animated slideInDown faster">
+        <nav class="navbar  app-sticky-top drop-shadow">
           <a class="navbar-brand" href="#">
             <img src="images/Logo.png" alt="Prudle Labs">
           </a>
@@ -199,7 +200,7 @@
             <i class="fas fa-bars"></i>
           </button>
         </nav>
-        <div class="header-bottom-sticky-wrapper animated slideInDown faster">
+        <div class="header-bottom-sticky-wrapper ">
           <div class="container">
             <div class="header-bottom header-bottom-sticky collapse dont-collapse-lg" id="navBarMobileSticky">
               <nav class="navbar navbar-expand-lg">
@@ -216,7 +217,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Products
                     </a>
-                    <div class="dropdown-menu fadeInUp animated faster2x" aria-labelledby="productsDropdown">
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
                       <a class="dropdown-item menu-accent-2px" href="#">
                         <span class="hvr-underline-from-left">P-I18N</span>
                       </a>
@@ -232,7 +233,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Company
                     </a>
-                    <div class="dropdown-menu fadeInUp animated faster2x" aria-labelledby="productsDropdown">
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
                       <a class="dropdown-item menu-accent-2px" href="#">
                         <span class="hvr-underline-from-left">About Us</span>
                       </a>
@@ -296,7 +297,9 @@
         
       </header>
     </div>
-    <!-- END Header -->
+
+  <!-- main -->
+
     <main class="main-wrapper">
       <!-- slider -->
       <div class="home-slider">
@@ -305,20 +308,20 @@
             <div class="carousel-item active slider1">
               <!-- <img class="d-block" width="100%" src="images/homesliders/slider1.png" alt="First slide"> -->
               <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                   <div class="col col-md-8 col-lg-10 col-xl-8">
-                    <h2 class="slider-title text-center animated fadeInLeft">There is a better way <br>to Translate </h2>
+                    <h2 class="slider-title text-center ">There is a better way <br>to Translate </h2>
                   </div>
                   <div class="col col-md-8 col-lg-10 col-xl-8 collapse dont-collapse-lg">
-                    <p class="text-center animated fadeInRight full-block">
-                      <button class="btn btn-primary slider-btn btn-lg btn-long">Try for free!</button>
-                      <button class="btn btn-outline-light slider-btn btn-lg btn-long">Get a demo <ion-icon src="images/icons/left-arrow.svg"></ion-icon></button> 
+                    <p class="text-center full-block">
+                      <button class="btn btn-primary slider-btn btn-lg btn-long hvr-float">Try for free!</button>
+                      <button class="btn btn-outline-light slider-btn btn-lg btn-long hvr-float">Get a demo <ion-icon src="images/icons/left-arrow.svg"></ion-icon></button> 
                     </p>
                   </div>
                 </div>
                 <div class="row collapse-lg">
                   <div class="col-12 col-md-8 col-lg-10 col-xl-8 text-center">
-                    <!-- <p class="text-center animated fadeInRight"> -->
+                    <!-- <p class="text-center"> -->
                       <button class="btn btn-primary slider-btn btn-lg">Try for free!</button>
                     <!-- </p> -->
                   </div>
@@ -341,10 +344,10 @@
       </div>
 
       <!-- overlapped cards -->
-      <div class="slider-overlapped-cards">
+      <div class="slider-overlapped-cards" data-aos="fade-up">
         <div class="container">
           <div class="row collapse-lg">
-            <div class="card no-border-radius animated fadeInUp no-border col-sm-12 col-lg-6">
+            <div class="card no-border-radius no-border col-sm-12 col-lg-6">
               <div class="card-body line-height-close drop-shadow">
                 <img src="images/icons/home/sourcecode.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
@@ -352,7 +355,7 @@
                 <button type="button" class="btn btn-outline-dark no-hover text-big">P-I18N</button>
               </div>
             </div>
-            <div class="card no-border-radius animated fadeInUp no-border col-sm-12 col-lg-6">
+            <div class="card no-border-radius no-border col-sm-12 col-lg-6">
               <div class="card-body line-height-close drop-shadow">
                 <img src="images/icons/home/translation.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
@@ -360,7 +363,7 @@
                 <button type="button" class="btn btn-outline-dark no-hover text-big">P-TMS</button>
               </div>
             </div>
-            <div class="card no-border-radius animated fadeInUp no-border col-sm-12 col-lg-6">
+            <div class="card no-border-radius no-border col-sm-12 col-lg-6">
               <div class="card-body line-height-close drop-shadow">
                 <img src="images/icons/home/automation.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
@@ -372,7 +375,7 @@
           </div>
           <div class="card-columns collapse dont-collapse-lg">
             <div class="card no-border-radius no-border  hvr-float-2x">
-              <div class="card-body line-height-close drop-shadow animated fadeInUp">
+              <div class="card-body line-height-close drop-shadow">
                 <img src="images/icons/home/sourcecode.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
                 <p class="text-large app-text-primary medium">Source Code Module</p>
@@ -385,7 +388,7 @@
               </div>
             </div>
             <div class="card no-border-radius no-border hvr-float-2x">
-              <div class="card-body line-height-close drop-shadow animated fadeInUp">
+              <div class="card-body line-height-close drop-shadow">
                 <img src="images/icons/home/translation.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
                 <p class="text-large app-text-primary medium">Translation Management</p>
@@ -398,7 +401,7 @@
               </div>
             </div>
             <div class="card no-border-radius no-border hvr-float-2x">
-              <div class="card-body line-height-close drop-shadow animated fadeInUp">
+              <div class="card-body line-height-close drop-shadow ">
                 <img src="images/icons/home/automation.svg" alt="transaltion sourcecode">
                 <p class="text-almost-dark text-big2 no-margin">Prudle's</p>
                 <p class="text-large app-text-primary medium">Automation QA Plugins</p>
@@ -418,17 +421,19 @@
       <!-- home services -->
       <div class="home-services">
         <div class="container">
-          <div class="row section-intro">
+          <div class="row section-intro" data-aos="fade-up">
             <div class="col">
               <p class="text-center text-big section-title spread2">SERVICES WE OFFER</p>
               <p class="text-center text-large bold section-desc spread3">Services We Deliver <br> we provide <span class="app-text-primary">truly prominent Solutions</span></p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-lg-4 app-card-flat animated fadeInUp">
+          <div class="row" data-aos="fade-up">
+            <div class="col-12 col-lg-4 app-card-flat ">
               <div class="app-card-body bg-dark-blue-grad hvr-float-2x">
                 <p class="text-center">
-                  <img src="images/icons/home/translate.svg" alt="Internationalization">
+                  <!-- <img src="images/icons/home/translate.svg" alt="Internationalization"> -->
+                  <object data="images/icons/home/internationalization.svg" type="image/svg+xml" class="hover-hide">translate svg</object>
+                  <object data="images/icons/home/internationalization-hover.svg" type="image/svg+xml" class="hover-show">translate svg</object>
                 </p>
                 <p class="text-center text-big bold spread2">
                   Internationalization
@@ -441,10 +446,12 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-4 app-card-flat animated fadeInUp">
+            <div class="col-12 col-lg-4 app-card-flat">
               <div class="app-card-body bg-dark-blue-grad hvr-float-2x">
                 <p class="text-center">
-                  <img src="images/icons/home/localization.svg" alt="Internationalization">
+                  <object data="images/icons/home/localization.svg" class="hover-hide" type="image/svg+xml">Internationalization</object>
+                  <object data="images/icons/home/localization-hover.svg" class="hover-show" type="image/svg+xml">Internationalization</object>
+                  
                 </p>
                 <p class="text-center text-big bold spread2">
                   Localization
@@ -457,10 +464,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-4 app-card-flat animated fadeInUp">
+            <div class="col-12 col-lg-4 app-card-flat ">
               <div class="app-card-body bg-dark-blue-grad hvr-float-2x">
                 <p class="text-center">
-                  <img src="images/icons/home/translate.svg" alt="Internationalization">
+                  <object data="images/icons/home/translate.svg" class="hover-hide" type="image/svg+xml">Internationalization</object>
+                  <object data="images/icons/home/translate-hover.svg" class="hover-show" type="image/svg+xml">Internationalization</object>
                 </p>
                 <p class="text-center text-big bold spread2">
                   Translation
@@ -474,11 +482,11 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center p-3">
+          <div class="row justify-content-center p-3"  data-aos="fade-up">
             <div class="col-8">
                 <p class="text-center btn-bar">
-                  <button class="btn btn-primary slider-btn btn-lg btn-long animated fadeInLeft">Talk to our experts</button>
-                  <button class="btn btn-outline-primary slider-btn btn-lg btn-long animated fadeInRight">Contact us now</button>
+                  <button class="btn btn-primary slider-btn btn-lg btn-long hvr-float">Talk to our experts</button>
+                  <button class="btn btn-outline-primary slider-btn btn-lg btn-long hvr-float">Contact us now</button>
               
                 </p>
             </div>
@@ -490,13 +498,13 @@
       <!-- home discover -->
       <div class="home-discover app-bg-light">
         <div class="container">
-          <div class="row section-intro">
+          <div class="row section-intro" data-aos="fade-up">
             <div class="col">
               <p class="text-center text-big section-title spread2">DISCOVER OUR COMPANY</p>
               <p class="text-center text-large bold section-desc spread3">We’ve been thriving in <span class="app-text-primary">5 years</span></p>
             </div>
           </div>
-          <div class="row tab-controls">
+          <div class="row tab-controls" data-aos="fade-up">
             <div class="col-6 col-md-3">
               <button class="btn btn-outline-primary btn-block btn-big ">OUR MISSION</button>
             </div> 
@@ -510,7 +518,7 @@
               <button class="btn btn-light btn-block btn-big">OUR AWARDS</button>
             </div> 
           </div>
-          <div class="row tab-content-row">
+          <div class="row tab-content-row" data-aos="fade-up">
             <div class="col-12 col-lg-6 video-wrapper">
               <iframe width="100%" src="https://www.youtube.com/embed/1nGNCSHfaIs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -519,7 +527,7 @@
                 Vestibulum blandit viverra convallis. Pellentesque ligula urna, fermentum ut semper in, tincidunt nec dui. Morbi mauris lacus, consequat eget justo in, semper gravida enim. Donec ultrices varius ligula. Ut non pretium augue. Etiam non rutrum metus. In varius sit amet lorem tempus sagittis. Cras sed maximus enim, vel ultricies tortor. Pellentesque consectetur tellus ornare felis porta dapibus. Etiam eget viverra ipsum, ac posuere massa. Nam vitae tempor metus. Donec rhoncus, metus ac convallis ultricies, turpis augue vestibulum elit, ut pharetra orci urna quis lectus. Praesent in libero non enim tincidunt imperdiet nec vitae urna. Morbi elementum non enim eget aliquet. Vivamus fermentum quam magna, ac cursus neque pulvinar feugiat. Nulla facilisi.
               </p>
               <p>
-                <button class="btn btn-link btn-long p-0">
+                <button class="btn btn-link btn-long p-0 no-decor hvr-move-icon-right hvr-color-accent">
                   Lets get started <i class="fas fa-arrow-right"></i>
                 </button>
               </p>
@@ -532,7 +540,7 @@
       <!-- home blog -->
       <div class="home-blogs">
         <div class="container">
-          <div class="row section-intro">
+          <div class="row section-intro" data-aos="fade-up">
             <div class="col">
               <!-- <p class="text-center text-big section-title spread2">OUR BLOG</p> -->
               <p class="text-center text-large bold section-desc spread3">Our <span class="app-text-primary">Recent</span> blog posts</p>
@@ -542,63 +550,69 @@
             <div class="col-12 col-md-4">
               <div class="blog-wrapper">
                 <div class="blog-body">
-                  <p>
+                  <p data-aos="fade-up">
                     <img src="images/blogs/blog_img1.png" alt="">
                   </p>
-                  <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
-                  <p class="text-big bold">
-                    How a single platform enables both Machine & Human translation
-                  </p>
-                  <p class="text-small bold spread">
-                    Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
-                  </p>
-                  <p>
-                    <button class="btn btn-link btn-long p-0 btn-sharp">
-                      Read more <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </p>
+                  <div data-aos="fade-up">
+                    <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
+                    <p class="text-big bold">
+                      How a single platform enables both Machine & Human translation
+                    </p>
+                    <p class="text-small bold spread">
+                      Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
+                    </p>
+                    <p class="menu-accent-2px">
+                      <button class="btn btn-link btn-long p-0 btn-sharp hvr-underline-from-left">
+                        Read more <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="blog-wrapper">
                 <div class="blog-body">
-                  <p>
+                  <p data-aos="fade-up">
                     <img src="images/blogs/blog_img2.png" alt="">
                   </p>
-                  <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
-                  <p class="text-big bold">
-                    How a single platform enables both Machine & Human translation
-                  </p>
-                  <p class="text-small bold spread">
-                    Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
-                  </p>
-                  <p>
-                    <button class="btn btn-link btn-long p-0 btn-sharp">
-                      Read more <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </p>
+                  <div  data-aos="fade-up">
+                    <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
+                    <p class="text-big bold">
+                      How a single platform enables both Machine & Human translation
+                    </p>
+                    <p class="text-small bold spread">
+                      Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
+                    </p>
+                    <p class="menu-accent-2px">
+                      <button class="btn btn-link btn-long p-0 btn-sharp hvr-underline-from-left">
+                        Read more <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="blog-wrapper">
                 <div class="blog-body">
-                  <p>
+                  <p data-aos="fade-up">
                     <img src="images/blogs/blog_img3.png" alt="">
                   </p>
-                  <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
-                  <p class="text-big bold">
-                    How a single platform enables both Machine & Human translation
-                  </p>
-                  <p class="text-small bold spread">
-                    Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
-                  </p>
-                  <p>
-                    <button class="btn btn-link btn-long p-0 btn-sharp">
-                      Read more <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </p>
+                  <div data-aos="fade-up">
+                    <p class="spread text-grey-2 date"><i class="far fa-calendar"></i> <span class="text-small">February 10, 2020</span></p>
+                    <p class="text-big bold">
+                      How a single platform enables both Machine & Human translation
+                    </p>
+                    <p class="text-small bold spread">
+                      Though the most widely used language for businesses across the globe is English, yet about 75 % of the world still does not speak or understand English…
+                    </p>
+                    <p class="menu-accent-2px">
+                      <button class="btn btn-link btn-long p-0 btn-sharp hvr-underline-from-left">
+                        Read more <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -610,14 +624,14 @@
       <div class="home-lets-talk bg-dark-blue-grad full-block">
         <div class="lets-talk-wrapper">
           <div class="container-fluid">
-            <div class="row section-intro align-items-center">
+            <div class="row section-intro align-items-center" data-aos="fade-up">
               <div class="col-12 col-md-7">
                 <p class="text-big3 bold text-white spread3">We provide all kinds of services that <br> <span class="text-accent-dark">vows your success</span></p>
               </div>
               <div class="col-12 col-md-5">
                 <p class="btn-bar">
-                  <button class="btn btn-light text-primary btn-long"><i class="fas fa-comments"></i> Lets Talk</button>
-                  <button class="btn btn-accent btn-long"><i class="fas fa-info-circle"></i> Get info</button>
+                  <button class="btn btn-light text-primary btn-long hvr-float"><i class="fas fa-comments"></i> Lets Talk</button>
+                  <button class="btn btn-accent btn-long hvr-float"><i class="fas fa-info-circle"></i> Get info</button>
                 </p>
               </div>
             </div>
@@ -629,15 +643,15 @@
     <!-- case studies -->
       <div class="home-case-studies">
         <div class="container">
-          <div class="row section-intro">
+          <div class="row section-intro" data-aos="fade-up">
             <div class="col">
               <p class="text-center text-big spread2 section-title">CASE STUDIES</p>
               <p class="text-center text-large bold spread3 section-desc">Proud Projects <span class="app-text-primary">make us excel</span></p>
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="col-12 col-lg-4">
-              <div class="app-card-wrapper">
+              <div class="app-card-wrapper hvr-float-2x">
                 <div class="app-card-body case-study1 drop-shadow3">
                   <div class="bordered-content ">
                     <p class="text-big-1-5 bold spread2 case-title">
@@ -656,7 +670,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="app-card-wrapper">
+              <div class="app-card-wrapper hvr-float-2x">
                 <div class="app-card-body case-study2 drop-shadow3">
                   <div class="bordered-content ">
                     <p class="text-big-1-5 bold spread2 case-title">
@@ -675,7 +689,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="app-card-wrapper">
+              <div class="app-card-wrapper hvr-float-2x">
                 <div class="app-card-body case-study3 drop-shadow3">
                   <div class="bordered-content ">
                     <p class="text-big-1-5 bold spread2 case-title">
@@ -694,7 +708,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="carousel-dots-wrapper justify-content-center">
               <ul class="carousel-dots align-items-center">
                 <li class="active"></li>
@@ -710,7 +724,7 @@
     <!-- testimonials -->
       <div class="home-testimonials app-bg-light">
         <div class="container">
-          <div class="row section-intro">
+          <div class="row section-intro" data-aos="fade-up">
             <div class="col">
               <p class="text-center text-big spread2 section-title">TESTIMONIALS</p>
               <p class="text-center text-large bold spread3 section-desc">What do people praise about <span class="app-text-primary">Prudle ?</span></p>
@@ -778,7 +792,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="carousel-dots-wrapper justify-content-center">
               <ul class="carousel-dots align-items-center">
                 <li class="active"></li>
@@ -812,41 +826,41 @@
                 <div class="col-12 col-md-6 col-lg-4">
                   <ul class="footer-sect no-bulletin">
                     <li class="title text-big2 spread3 bold">Services</li>
-                    <li class="link text-big spread"><a href="#">Internationalization</a></li>
-                    <li class="link text-big spread"><a href="#">Localization QA</a></li>
-                    <li class="link text-big spread"><a href="#">Translation</a></li>
-                    <li class="link text-big spread"><a href="#">Interpretation</a></li>
-                    <li class="link text-big spread"><a href="#">Transcription</a></li>
-                    <li class="link text-big spread"><a href="#">Subtitling</a></li>
-                    <li class="link text-big spread"><a href="#">Voice over</a></li>
+                    <li class="link text-medium spread"><a href="#">Internationalization</a></li>
+                    <li class="link text-medium spread"><a href="#">Localization QA</a></li>
+                    <li class="link text-medium spread"><a href="#">Translation</a></li>
+                    <li class="link text-medium spread"><a href="#">Interpretation</a></li>
+                    <li class="link text-medium spread"><a href="#">Transcription</a></li>
+                    <li class="link text-medium spread"><a href="#">Subtitling</a></li>
+                    <li class="link text-medium spread"><a href="#">Voice over</a></li>
                   </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                   <ul class="footer-sect no-bulletin">
                     <li class="title text-big2 spread3 bold">Quick Links</li>
-                    <li class="link text-big spread"><a href="#">Our Team</a></li>
-                    <li class="link text-big spread"><a href="#">Careers</a></li>
-                    <li class="link text-big spread"><a href="#">GDPR</a></li>
-                    <li class="link text-big spread"><a href="#">Privacy Policy</a></li>
-                    <li class="link text-big spread"><a href="#">Terms of use</a></li>
+                    <li class="link text-medium spread"><a href="#">Our Team</a></li>
+                    <li class="link text-medium spread"><a href="#">Careers</a></li>
+                    <li class="link text-medium spread"><a href="#">GDPR</a></li>
+                    <li class="link text-medium spread"><a href="#">Privacy Policy</a></li>
+                    <li class="link text-medium spread"><a href="#">Terms of use</a></li>
                   </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                   <ul class="footer-sect no-bulletin">
                     <li class="title text-big2 spread3 bold">Support</li>
-                    <li class="link text-big spread"><a href="#">Blog</a></li>
-                    <li class="link text-big spread"><a href="#">FAQs</a></li>
-                    <li class="link text-big spread"><a href="#">Locate Us</a></li>
-                    <li class="link text-big spread"><a href="#">Cookies Policy</a></li>
-                    <li class="link text-big spread"><a href="#">Contact Us</a></li>
+                    <li class="link text-medium spread"><a href="#">Blog</a></li>
+                    <li class="link text-medium spread"><a href="#">FAQs</a></li>
+                    <li class="link text-medium spread"><a href="#">Locate Us</a></li>
+                    <li class="link text-medium spread"><a href="#">Cookies Policy</a></li>
+                    <li class="link text-medium spread"><a href="#">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
               <div class="row social-icons-wrapper">
-                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-icon hvr-float"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon hvr-float"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon hvr-float"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-icon hvr-float"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
             <!-- <div class="col-12 col-md-6 col-lg-4">
@@ -864,33 +878,33 @@
             <!-- <div class="col-12 col-md-6 col-lg-4">
               <ul class="footer-sect no-bulletin">
                 <li class="title text-big2 spread3 bold">Services</li>
-                <li class="link text-big spread">Internationalization</li>
-                <li class="link text-big spread">Localization QA</li>
-                <li class="link text-big spread">Translation</li>
-                <li class="link text-big spread">Interpretation</li>
-                <li class="link text-big spread">Transcription</li>
-                <li class="link text-big spread">Subtitling</li>
-                <li class="link text-big spread">Voice over</li>
+                <li class="link text-medium spread">Internationalization</li>
+                <li class="link text-medium spread">Localization QA</li>
+                <li class="link text-medium spread">Translation</li>
+                <li class="link text-medium spread">Interpretation</li>
+                <li class="link text-medium spread">Transcription</li>
+                <li class="link text-medium spread">Subtitling</li>
+                <li class="link text-medium spread">Voice over</li>
               </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <ul class="footer-sect no-bulletin">
                 <li class="title text-big2 spread3 bold">Quick Links</li>
-                <li class="link text-big spread">Our Team</li>
-                <li class="link text-big spread">Careers</li>
-                <li class="link text-big spread">GDPR</li>
-                <li class="link text-big spread">Privacy Policy</li>
-                <li class="link text-big spread">Terms of use</li>
+                <li class="link text-medium spread">Our Team</li>
+                <li class="link text-medium spread">Careers</li>
+                <li class="link text-medium spread">GDPR</li>
+                <li class="link text-medium spread">Privacy Policy</li>
+                <li class="link text-medium spread">Terms of use</li>
               </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <ul class="footer-sect no-bulletin">
                 <li class="title text-big2 spread3 bold">Support</li>
-                <li class="link text-big spread">Blog</li>
-                <li class="link text-big spread">FAQs</li>
-                <li class="link text-big spread">Locate Us</li>
-                <li class="link text-big spread">Cookies Policy</li>
-                <li class="link text-big spread">Contact Us</li>
+                <li class="link text-medium spread">Blog</li>
+                <li class="link text-medium spread">FAQs</li>
+                <li class="link text-medium spread">Locate Us</li>
+                <li class="link text-medium spread">Cookies Policy</li>
+                <li class="link text-medium spread">Contact Us</li>
               </ul>
             </div> -->
           </div>
@@ -899,6 +913,8 @@
     </footer>
   
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

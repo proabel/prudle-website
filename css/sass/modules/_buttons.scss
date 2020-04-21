@@ -29,3 +29,12 @@
 .btn-sharp{
     border-radius: 0px;
 }
+
+.btn.hvr-move-icon-right:hover{
+    i{
+        padding-left:10px;
+    }
+}
+.btn.hvr-color-accent:hover{
+    color: $accent-dark-color;
+}

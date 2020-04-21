@@ -161,6 +161,9 @@ body, .btn-light {
   .text-small2 {
     font-size: .88rem; }
 
+  .text-medium {
+    font-size: 1.1rem; }
+
   .text-big {
     font-size: 1.3rem; }
 
@@ -210,6 +213,12 @@ body, .btn-light {
 
 .btn-sharp {
   border-radius: 0px; }
+
+.btn.hvr-move-icon-right:hover i {
+  padding-left: 10px; }
+
+.btn.hvr-color-accent:hover {
+  color: #CEA211; }
 
 .app-icon {
   width: 18px;
@@ -290,6 +299,43 @@ body, .btn-light {
   -webkit-transform: translateY(-16px);
   transform: translateY(-16px); }
 
+.hover-ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background: #BE5869;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 10px 10px 33px #403A3E;
+  outline: none; }
+  .hover-ripple:before, .hover-ripple:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid rgba(64, 58, 62, 0.7);
+    filter: blur(0);
+    transform-origin: 50%;
+    z-index: -1; }
+  .hover-ripple:hover:before, .hover-ripple:hover:after {
+    border-color: transparent;
+    filter: blur(2px);
+    transform: scale(4);
+    transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease; }
+  .hover-ripple:hover:after {
+    transition-delay: 100ms; }
+
+@keyframes ripple-accent {
+  0% {
+    box-shadow: 0 0 0 0 rgba(206, 162, 17, 0.3); }
+  100% {
+    box-shadow: 0 0 0 1em rgba(206, 162, 17, 0); } }
 .header-wrapper {
   position: relative;
   z-index: 100; }
@@ -300,6 +346,8 @@ body, .btn-light {
     padding-top: 10px; }
   .header-wrapper .navbar-toggler {
     color: #ffffff; }
+  .header-wrapper .header-top {
+    background-color: #ffffff; }
   .header-wrapper .header-bottom {
     position: absolute;
     top: 82px;
@@ -578,7 +626,7 @@ main {
     .slider-overlapped-cards .card .card-curved-footer {
       display: none;
       padding-bottom: 60px;
-      margin: 0px 20px;
+      margin: 0px 70px;
       border-radius: 50%;
       position: relative;
       margin-top: -130px;
@@ -612,13 +660,22 @@ main {
       font-size: 24px;
       padding-top: 7px;
       margin-top: 10px; }
+    .home-services .app-card-flat .hover-show {
+      display: none; }
+    .home-services .app-card-flat .hover-hide {
+      display: inline-flex; }
   .home-services .btn-bar {
     margin: 60px 0px 30px 0px; }
   .home-services .app-card-flat:hover .btn-round {
     background-color: #CEA211;
     color: #ffffff;
     font-size: 24px;
-    padding-top: 7px; }
+    padding-top: 7px;
+    animation: ripple-accent 0.7s linear infinite; }
+  .home-services .app-card-flat:hover .hover-show {
+    display: inline-flex; }
+  .home-services .app-card-flat:hover .hover-hide {
+    display: none; }
 
 .home-discover {
   padding-bottom: 180px; }
@@ -645,8 +702,7 @@ main {
     .home-blogs .blog-body img {
       width: 99%; }
     .home-blogs .blog-body .btn-link {
-      padding-left: 0px;
-      border-bottom: 2px solid #CEA211; }
+      padding-left: 0px; }
     .home-blogs .blog-body .btn-link:hover {
       text-decoration: none; }
   .home-blogs .blog-body:nth-child(3) {
@@ -668,11 +724,16 @@ main {
     padding-top: 200px;
     border-radius: 20px;
     margin-bottom: 20px; }
+  .home-case-studies .app-card-wrapper .app-card-body:hover .footer-content {
+    background-color: #0D59CA; }
+    .home-case-studies .app-card-wrapper .app-card-body:hover .footer-content a.app-text-primary {
+      color: #ffffff; }
   .home-case-studies .app-card-wrapper .bordered-content {
     padding-bottom: 0px; }
   .home-case-studies .app-card-wrapper .footer-content {
     border-top: 2px solid #eeeeee;
-    padding-top: 10px; }
+    padding-top: 10px;
+    border-radius: 0px 0px 20px 20px; }
     .home-case-studies .app-card-wrapper .footer-content p {
       padding-bottom: 20px; }
   .home-case-studies .app-card-wrapper .case-title {
@@ -694,6 +755,8 @@ main {
     background: url("../images/casestudies/casestudy1.png") top center no-repeat;
     background-size: 100%;
     background-color: rgba(0, 0, 0, 0); }
+  .home-case-studies .carousel-dots-wrapper {
+    margin-top: 20px; }
 
 .home-testimonials {
   padding-bottom: 60px; }
