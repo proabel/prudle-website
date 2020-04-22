@@ -13,6 +13,44 @@ body, p, span, li, a, div, section, table, button, input{
 }
 //font
 
+//spacing
+    //todo try to implement these classes amap
+.no-wrap{
+    white-space: nowrap;
+}
+.p-20{
+    padding:20px;
+}
+.p-25{
+    padding:25px;
+}
+.p-t-10{
+    padding-top:10px;
+}
+.p-t-20{
+    padding-top:20px;
+}
+.p-t-40{
+    padding-top:40px;
+}
+.p-v-20{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.p-v-40{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.p-v-50{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.p-v-60{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
 // sizes
 .text-small{
     font-size: .92rem;
@@ -114,6 +152,9 @@ body, .btn-light{
     .text-enormous{
         font-size: 4.5rem;
     }
+    .text-explosive{
+        font-size: 12.5rem;  // 246px
+    }
     .spread{
         letter-spacing: .21px;
     }
@@ -123,5 +164,8 @@ body, .btn-light{
     }
     .spread3{
         letter-spacing: 1.34px;
+    }
+    .spread4{
+        letter-spacing: 3.94px;
     }
 }
