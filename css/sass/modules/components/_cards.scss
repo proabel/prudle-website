@@ -34,5 +34,18 @@
 }
 
 .sect-icon-padded{
-    
+    padding-left:30px;
+    padding-bottom:20px;
+    .sect-title{
+        //min-height:75px;
+    }
+}
+.sect-icon-padded::before{
+    position: absolute;
+        top:7px;
+        left:0px;
+        content: url("../images/icons/tick_accent.svg");
+        display: block;
+        width: 30px;
+        height: 30px;
 }

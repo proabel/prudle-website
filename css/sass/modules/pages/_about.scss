@@ -27,3 +27,12 @@
         padding-top:15px;
     }
 }
+
+.about-optimal{
+    .sect-icon-padded{
+
+    }
+    .sect-icon-padded::before{
+        content: url("../images/icons/tick_accent.svg");
+    }
+}
