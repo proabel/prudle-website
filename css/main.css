@@ -1,5 +1,5 @@
 /**** Resetting Grid options to be a bit wider  *****/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
 @media (min-width: 544px) {
   .container {
     max-width: 576px; } }
@@ -85,17 +85,26 @@ body, p, span, li, a, div, section, table, button, input {
 .medium {
   font-weight: 600; }
 
+.extra-light {
+  font-weight: 200; }
+
 .center {
   text-align: center; }
 
 .no-wrap {
   white-space: nowrap; }
 
+.p-0 {
+  padding: 0px; }
+
 .p-20 {
   padding: 20px; }
 
 .p-25 {
   padding: 25px; }
+
+.p-40 {
+  padding: 40px; }
 
 .p-t-10 {
   padding-top: 10px; }
@@ -108,6 +117,21 @@ body, p, span, li, a, div, section, table, button, input {
 
 .p-b-40 {
   padding-bottom: 40px; }
+
+.p-b-60 {
+  padding-bottom: 60px; }
+
+.p-b-100 {
+  padding-bottom: 100px; }
+
+.p-l-20 {
+  padding-left: 20px; }
+
+.p-l-40 {
+  padding-left: 40px; }
+
+.p-l-100 {
+  padding-left: 100px; }
 
 .p-v-20 {
   padding-top: 20px;
@@ -124,6 +148,13 @@ body, p, span, li, a, div, section, table, button, input {
 .p-v-60 {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+.p-v-100 {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.m-0 {
+  margin: 0px; }
 
 .text-small {
   font-size: .92rem; }
@@ -411,6 +442,9 @@ body, .btn-light {
   width: 30px;
   height: 30px; }
 
+.rounded-25 {
+  border-radius: 25px; }
+
 .header-wrapper {
   position: relative;
   z-index: 100; }
@@ -585,6 +619,9 @@ footer {
 
 .no-bulletin {
   list-style: none; }
+
+.no-flex-grow {
+  flex-grow: 0; }
 
 .drop-shadow {
   box-shadow: 6px 6px 20px #00000029; }
@@ -928,5 +965,93 @@ main {
   height: 510px; }
   .page-banner.why-choose-us .row {
     padding-top: 140px; }
+
+.why-cards .col-lg-3 {
+  padding-right: 35px; }
+.why-cards .col-lg-3:last-child {
+  padding-right: 20px; }
+.why-cards img {
+  padding: 20px; }
+
+.why-expertise .progress {
+  height: 3px; }
+.why-expertise .yellow-borderd-features {
+  box-shadow: -6px 0px 0px 0px #EAB300; }
+  .why-expertise .yellow-borderd-features .row {
+    padding-left: 40px;
+    min-height: 130px; }
+  .why-expertise .yellow-borderd-features .col::before {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    color: #EAB300;
+    font-size: 32px;
+    left: -43px;
+    top: 12px; }
+
+.globe-wm {
+  background: transparent url("../images/globe_wm.png") -50px center no-repeat padding-box;
+  background-size: 70%; }
+
+.contact-man-bg {
+  background: url("../images/man1.png") right bottom no-repeat; }
+
+.contact-rating .row.icon-phone::before {
+  content: url("../images/icons/why/call.svg");
+  position: absolute;
+  left: 0px;
+  margin-top: 20px; }
+.contact-rating .row.icon-mail::before {
+  content: url("../images/icons/why/email.svg");
+  position: absolute;
+  left: 0px;
+  margin-top: 20px; }
+
+.page-banner.history {
+  background: url("../images/history/history_banner.png") no-repeat top center;
+  background-size: cover;
+  height: 510px; }
+  .page-banner.history .row {
+    padding-top: 140px; }
+
+.history-wrapper {
+  position: relative; }
+  .history-wrapper .container.history-container::after {
+    border-left: 0.5px solid #0D59CA;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    height: 100%;
+    z-index: 100;
+    content: ' '; }
+  .history-wrapper .row .col-6:first-child {
+    padding-right: 50px; }
+  .history-wrapper .row .col-6:last-child {
+    padding-left: 50px; }
+  .history-wrapper .history-year-row {
+    position: relative; }
+    .history-wrapper .history-year-row .left-mark::before {
+      position: absolute;
+      right: -12px;
+      content: '\f192';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      background: #fff;
+      z-index: 101;
+      font-size: 24px;
+      color: #0D59CA;
+      margin-top: 30px;
+      top: 0px;
+      line-height: 16px; }
+    .history-wrapper .history-year-row .right-mark::before {
+      position: absolute;
+      content: '\f192';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900; }
+  .history-wrapper .history-data-row .image-wrapper {
+    background-color: #F8F8F8;
+    height: 330px;
+    width: 500px; }
 
 /*# sourceMappingURL=main.css.map */

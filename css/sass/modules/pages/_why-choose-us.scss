@@ -6,3 +6,68 @@
         padding-top: 140px;
     }
 }
+
+.why-cards{
+    .col-lg-3{
+        padding-right:35px;
+    }
+    .col-lg-3:last-child{
+        padding-right:20px;
+    }
+    img{
+        padding:20px;
+    }
+}
+
+.why-expertise{
+    .progress{
+        height: 3px;
+    }
+    .yellow-borderd-features{
+        //border-left:6px solid $accent-color;
+        box-shadow: -6px 0px 0px 0px $accent-color;
+        .row{
+            padding-left:40px;
+            min-height:130px;
+        }
+        .col::before{
+            content: '\f0da';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            color: #EAB300;
+            font-size: 32px;
+
+            left: -43px;
+            top: 12px;
+        }
+    }
+    .yellow-borderd-features::after{
+        //border-left:6px solid $accent-color;
+    }
+}
+.globe-wm{
+    background: transparent url('../images/globe_wm.png') -50px center no-repeat padding-box;
+    background-size: 70%;
+}
+.contact-man-bg{
+    background: url('../images/man1.png') right bottom no-repeat;
+    
+}
+.contact-rating{
+    
+    //background-size: 50%;
+    
+    .row.icon-phone::before{
+        content: url('../images/icons/why/call.svg');
+        position: absolute;
+        left: 0px;
+        margin-top:20px;
+    }
+    .row.icon-mail::before{
+        content: url('../images/icons/why/email.svg');
+        position: absolute;
+        left: 0px;
+        margin-top:20px;
+    }
+}

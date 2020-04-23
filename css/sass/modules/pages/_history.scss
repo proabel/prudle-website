@@ -1,0 +1,61 @@
+.page-banner.history{
+    background: url('../images/history/history_banner.png') no-repeat top center;
+    background-size: cover;
+    height: 510px;
+    .row{
+        padding-top: 140px;
+    }
+}
+
+.history-wrapper{
+    position: relative;
+    // .container.history-container{
+    //     z-index: ;
+    // }
+    .container.history-container::after{
+        border-left:.5px solid $primary-color;
+        position: absolute;
+        left:50%;
+        top:0px;
+        //width: 100%;
+        height: 100%;
+        z-index: 100;
+        content: ' ';
+    }
+    .row .col-6:first-child{
+        padding-right: 50px;
+    }
+    .row .col-6:last-child{
+        padding-left: 50px;
+    }
+    .history-year-row{
+        position: relative;
+        .left-mark::before{
+            position: absolute;
+            right: -12px;
+            content: '\f192';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            background: #fff;
+            z-index: 101;
+            font-size: 24px;
+            color: #0D59CA;
+            margin-top: 30px;
+            top: 0px;
+            line-height: 16px;
+        }
+        .right-mark::before{
+            position: absolute;
+            content: '\f192';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    }
+    .history-data-row{
+        .image-wrapper{
+            background-color: $light-color;
+            height: 330px;
+            width: 500px;
+        }
+    }
+}
