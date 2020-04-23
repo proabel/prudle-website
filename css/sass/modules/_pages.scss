@@ -96,6 +96,15 @@ main{
     border-right: 1px solid white;
 }
 
+.clients-wrapper{
+    .row{
+        img.col{
+            flex-grow: 0;
+        }
+    }
+}
+
 //imports pages
 @import 'pages/home.scss';
 @import 'pages/about.scss';
+@import 'pages/why-choose-us.scss';

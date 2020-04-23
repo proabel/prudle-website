@@ -655,6 +655,9 @@ main {
 .border-right-white {
   border-right: 1px solid white; }
 
+.clients-wrapper .row img.col {
+  flex-grow: 0; }
+
 /******** LANDING PAGE  **************/
 /*************************************/
 .home-slider {
@@ -918,5 +921,12 @@ main {
 
 .about-optimal .sect-icon-padded::before {
   content: url("../images/icons/tick_accent.svg"); }
+
+.page-banner.why-choose-us {
+  background: url("../images/why/why_banner.png") no-repeat top center;
+  background-size: cover;
+  height: 510px; }
+  .page-banner.why-choose-us .row {
+    padding-top: 140px; }
 
 /*# sourceMappingURL=main.css.map */
