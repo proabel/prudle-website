@@ -47,7 +47,9 @@
     }
 }
 .globe-wm{
-    background: transparent url('../images/globe_wm.png') -50px center no-repeat padding-box;
+    background-image: url('../images/globe_wm.png');
+    background-position: -50px center;
+    background-repeat: no-repeat;
     background-size: 70%;
 }
 .contact-man-bg{

@@ -85,6 +85,9 @@ body, p, span, li, a, div, section, table, button, input{
 .m-0{
     margin:0px;
 }
+.m-b-100{
+    margin-bottom:100px;
+}
 // sizes
 .text-small{
     font-size: .92rem;
@@ -101,7 +104,9 @@ body, p, span, li, a, div, section, table, button, input{
 .spread{
     letter-spacing: .21px;
 }
-
+.lh-60{
+    line-height: 60px;
+}
 .no-decor{
     text-decoration: none;
 }

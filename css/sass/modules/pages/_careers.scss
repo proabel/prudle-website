@@ -1,0 +1,13 @@
+.page-banner.careers{
+    //background-image: url('../images/history/history_banner.png');
+    background-size: cover;
+    height: 330px;
+    .row{
+        padding-top: 70px;
+    }
+}
+.position-row:nth-child(even){
+    background-color: $cream-color;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}

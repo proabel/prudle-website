@@ -156,6 +156,9 @@ body, p, span, li, a, div, section, table, button, input {
 .m-0 {
   margin: 0px; }
 
+.m-b-100 {
+  margin-bottom: 100px; }
+
 .text-small {
   font-size: .92rem; }
 
@@ -170,6 +173,9 @@ body, p, span, li, a, div, section, table, button, input {
 
 .spread {
   letter-spacing: .21px; }
+
+.lh-60 {
+  line-height: 60px; }
 
 .no-decor {
   text-decoration: none; }
@@ -695,6 +701,11 @@ main {
 .clients-wrapper .row img.col {
   flex-grow: 0; }
 
+.empty-box-100 {
+  display: block;
+  height: 100px;
+  width: 100%; }
+
 /******** LANDING PAGE  **************/
 /*************************************/
 .home-slider {
@@ -991,7 +1002,9 @@ main {
     top: 12px; }
 
 .globe-wm {
-  background: transparent url("../images/globe_wm.png") -50px center no-repeat padding-box;
+  background-image: url("../images/globe_wm.png");
+  background-position: -50px center;
+  background-repeat: no-repeat;
   background-size: 70%; }
 
 .contact-man-bg {
@@ -1030,7 +1043,8 @@ main {
   .history-wrapper .row .col-6:last-child {
     padding-left: 50px; }
   .history-wrapper .history-year-row {
-    position: relative; }
+    position: relative;
+    padding: 60px 0px 20px 0px; }
     .history-wrapper .history-year-row .left-mark::before {
       position: absolute;
       right: -12px;
@@ -1041,17 +1055,36 @@ main {
       z-index: 101;
       font-size: 24px;
       color: #0D59CA;
-      margin-top: 30px;
+      margin-top: 40px;
       top: 0px;
       line-height: 16px; }
     .history-wrapper .history-year-row .right-mark::before {
       position: absolute;
+      left: -12px;
       content: '\f192';
       font-family: 'Font Awesome 5 Free';
-      font-weight: 900; }
+      font-weight: 900;
+      background: #fff;
+      z-index: 101;
+      font-size: 24px;
+      color: #0D59CA;
+      margin-top: 40px;
+      top: 0px;
+      line-height: 16px; }
   .history-wrapper .history-data-row .image-wrapper {
     background-color: #F8F8F8;
     height: 330px;
     width: 500px; }
+
+.page-banner.careers {
+  background-size: cover;
+  height: 330px; }
+  .page-banner.careers .row {
+    padding-top: 70px; }
+
+.position-row:nth-child(even) {
+  background-color: #FDF7E5;
+  border: 1px solid #ccc;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */

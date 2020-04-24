@@ -106,9 +106,14 @@ main{
         }
     }
 }
-
+.empty-box-100{
+    display: block;
+    height: 100px;
+    width: 100%;
+}
 //imports pages
 @import 'pages/home.scss';
 @import 'pages/about.scss';
 @import 'pages/why-choose-us.scss';
 @import 'pages/history.scss';
+@import 'pages/careers.scss';
