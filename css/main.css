@@ -701,6 +701,9 @@ main {
 .clients-wrapper .row img.col {
   flex-grow: 0; }
 
+.yellow-borderd-left {
+  box-shadow: -6px 0px 0px 0px #EAB300; }
+
 .empty-box-100 {
   display: block;
   height: 100px;
@@ -1004,6 +1007,12 @@ main {
 .globe-wm {
   background-image: url("../images/globe_wm.png");
   background-position: -50px center;
+  background-repeat: no-repeat;
+  background-size: 70%; }
+
+.globe-wm-right {
+  background-image: url("../images/globe_wm.png");
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: 70%; }
 

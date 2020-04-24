@@ -106,6 +106,10 @@ main{
         }
     }
 }
+
+.yellow-borderd-left{
+    box-shadow: -6px 0px 0px 0px $accent-color;
+}
 .empty-box-100{
     display: block;
     height: 100px;

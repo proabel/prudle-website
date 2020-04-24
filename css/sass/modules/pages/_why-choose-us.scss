@@ -18,7 +18,6 @@
         padding:20px;
     }
 }
-
 .why-expertise{
     .progress{
         height: 3px;
@@ -49,6 +48,12 @@
 .globe-wm{
     background-image: url('../images/globe_wm.png');
     background-position: -50px center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.globe-wm-right{
+    background-image: url('../images/globe_wm.png');
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: 70%;
 }
