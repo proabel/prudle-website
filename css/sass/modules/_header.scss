@@ -6,7 +6,7 @@
         padding-bottom: 0px;
     }
     .navbar-brand{
-        padding-top:10px;
+        padding-top:5px;
     }
     .navbar-toggler{
         color:#ffffff;
@@ -90,7 +90,7 @@
         input.form-control{
             border-radius: 0px;
             border:none;
-            height: 75px;
+            height: 60px;
             background: $primary-bright-color;
             color:#efefef;
             padding:0px 0px 0px 1.2rem;
@@ -127,26 +127,33 @@
     @media (min-width: 992px){
         .header-top{
             .navbar{
-                height: 140px;
+                height: 104px;
+                .navbar-brand img{
+                    height:60px;
+                }
             }
         }
         .navbar-expand-lg .navbar-nav .nav-link {
             padding: .5rem .5rem;
         }
         .header-info-wrapper{
-            width: 430px;
+            //width: 430px;
         }
         .header-info{
+            .header-info-icon img{
+                width: 30px;
+            }
             margin-right:30px;
         }
         .header-bottom{
             position: relative;
             top:0px;
             width: 100%;
+            height: 60px !important;
             .navbar-nav{
-                height:75px;
+                //height:75px;
                 .nav-item{
-                    padding: 1rem .7rem;
+                    padding: .5rem .7rem;
                 }
             }
         }
@@ -157,13 +164,21 @@
             display: none;
             .header-bottom-sticky{
                 ul.navbar-nav{
-                    height: 70px;
+                    height: 60px;
+                    .nav-item{
+                        a.nav-link{
+                            padding: .7rem 1rem;
+                        }
+                    }
                 }
                 .nav-item-brand{
-                    padding-top: .75rem;
+                    //padding-top: 10px;
                 }
                 .navbar-brand{
-                    padding-top: 0px;
+                    //padding-top: 10px;
+                    img{
+                        height:40px;    
+                    }
                 }
             }
         }
@@ -176,11 +191,8 @@
         .navbar-expand-lg .navbar-nav .nav-link {
             padding: .5rem 1rem;
         }
-        .header-info-wrapper{
-            width: inherit;
-        }
         .header-info{
-            margin-right:50px;
+            margin-right:65px;
         }
         .header-bottom{
             position: relative;

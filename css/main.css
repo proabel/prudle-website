@@ -106,6 +106,9 @@ body, p, span, li, a, div, section, table, button, input {
 .p-40 {
   padding: 40px; }
 
+.p-t-5 {
+  padding-top: 5px; }
+
 .p-t-10 {
   padding-top: 10px; }
 
@@ -230,31 +233,31 @@ body, .btn-light {
     letter-spacing: 1.34px; } }
 @media (min-width: 992px) {
   .text-small {
-    font-size: .92rem; }
+    font-size: .88rem; }
 
   .text-small2 {
-    font-size: .88rem; }
+    font-size: .81rem; }
 
   .text-medium {
     font-size: 1.1rem; }
 
   .text-big {
-    font-size: 1.3rem; }
+    font-size: 1.25rem; }
 
   .text-big-1-5 {
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
 
   .text-big2 {
-    font-size: 1.8rem; }
+    font-size: 1.7rem; }
 
   .text-big3 {
-    font-size: 2rem; }
+    font-size: 1.9rem; }
 
   .text-large {
-    font-size: 2.5rem; }
+    font-size: 2.3rem; }
 
   .text-enormous {
-    font-size: 4.5rem; }
+    font-size: 4.3rem; }
 
   .text-explosive {
     font-size: 12.5rem; }
@@ -275,8 +278,8 @@ body, .btn-light {
   color: #ffffff; }
 
 .btn-long {
-  font-size: 1.38rem;
-  padding: 1rem 2.4rem; }
+  font-size: 1.2rem;
+  padding: .7rem 2.4rem; }
 
 .btn-big {
   padding-top: 1rem;
@@ -458,7 +461,7 @@ body, .btn-light {
     padding-top: 0px;
     padding-bottom: 0px; }
   .header-wrapper .navbar-brand {
-    padding-top: 10px; }
+    padding-top: 5px; }
   .header-wrapper .navbar-toggler {
     color: #ffffff; }
   .header-wrapper .header-top {
@@ -509,7 +512,7 @@ body, .btn-light {
     .header-wrapper .header-search.input-group input.form-control {
       border-radius: 0px;
       border: none;
-      height: 75px;
+      height: 60px;
       background: #116AD8;
       color: #efefef;
       padding: 0px 0px 0px 1.2rem; }
@@ -533,40 +536,39 @@ body, .btn-light {
       color: #0D59CA; }
   @media (min-width: 992px) {
     .header-wrapper .header-top .navbar {
-      height: 140px; }
+      height: 104px; }
+      .header-wrapper .header-top .navbar .navbar-brand img {
+        height: 60px; }
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem .5rem; }
-    .header-wrapper .header-info-wrapper {
-      width: 430px; }
     .header-wrapper .header-info {
       margin-right: 30px; }
+      .header-wrapper .header-info .header-info-icon img {
+        width: 30px; }
     .header-wrapper .header-bottom {
       position: relative;
       top: 0px;
-      width: 100%; }
-      .header-wrapper .header-bottom .navbar-nav {
-        height: 75px; }
-        .header-wrapper .header-bottom .navbar-nav .nav-item {
-          padding: 1rem .7rem; }
+      width: 100%;
+      height: 60px !important; }
+      .header-wrapper .header-bottom .navbar-nav .nav-item {
+        padding: .5rem .7rem; }
     .header-wrapper .app-sticky-top {
       top: -200px; }
     .header-wrapper .header-bottom-sticky-wrapper {
       display: none; }
       .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav {
-        height: 70px; }
-      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .nav-item-brand {
-        padding-top: .75rem; }
-      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand {
-        padding-top: 0px; } }
+        height: 60px; }
+        .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav .nav-item a.nav-link {
+          padding: .7rem 1rem; }
+      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand img {
+        height: 40px; } }
   @media (min-width: 1200px) {
     .header-wrapper .header-top .navbar-brand {
       padding-right: 40px; }
     .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
       padding: .5rem 1rem; }
-    .header-wrapper .header-info-wrapper {
-      width: inherit; }
     .header-wrapper .header-info {
-      margin-right: 50px; }
+      margin-right: 65px; }
     .header-wrapper .header-bottom {
       position: relative;
       top: 0px;
@@ -707,6 +709,9 @@ main {
 .empty-box-100 {
   display: block;
   height: 100px;
+  width: 100%; }
+
+.w100p {
   width: 100%; }
 
 /******** LANDING PAGE  **************/

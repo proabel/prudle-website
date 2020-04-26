@@ -115,6 +115,9 @@ main{
     height: 100px;
     width: 100%;
 }
+.w100p{
+    width: 100%;
+}
 //imports pages
 @import 'pages/home.scss';
 @import 'pages/about.scss';

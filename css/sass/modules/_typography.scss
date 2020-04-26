@@ -33,6 +33,9 @@ body, p, span, li, a, div, section, table, button, input{
 .p-40{
     padding:40px;
 }
+.p-t-5{
+    padding-top:5px;
+}
 .p-t-10{
     padding-top:10px;
 }
@@ -165,31 +168,31 @@ body, .btn-light{
 }
 @media (min-width: 992px) {
     .text-small{
-        font-size: .92rem;
+        font-size: .88rem;
     }
     .text-small2{
-        font-size: .88rem;
+        font-size: .81rem;
     }
     .text-medium{
         font-size: 1.1rem;
     }
     .text-big{
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
     .text-big-1-5{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .text-big2{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     .text-big3{
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     .text-large{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .text-enormous{
-        font-size: 4.5rem;
+        font-size: 4.3rem;
     }
     .text-explosive{
         font-size: 12.5rem;  // 246px
