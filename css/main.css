@@ -253,6 +253,9 @@ body, .btn-light {
   .text-big3 {
     font-size: 1.9rem; }
 
+  .text-big4 {
+    font-size: 2.1rem; }
+
   .text-large {
     font-size: 2.3rem; }
 
@@ -286,8 +289,8 @@ body, .btn-light {
   padding-bottom: 1rem; }
 
 .btn-round {
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 100%; }
 
 .btn-bar .btn {
@@ -597,11 +600,10 @@ footer {
   justify-content: flex-end; }
   .social-icons-wrapper a.social-icon {
     color: #ffffff;
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #ffffff;
-    padding-top: 3px;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -797,9 +799,9 @@ main {
       background-color: #ffffff;
       color: #0D59CA;
       border: none;
-      font-size: 24px;
-      padding-top: 7px;
-      margin-top: 10px; }
+      font-size: 22px;
+      padding-top: 5px;
+      margin-top: 15px; }
     .home-services .app-card-flat .hover-show {
       display: none; }
     .home-services .app-card-flat .hover-hide {
@@ -943,14 +945,14 @@ main {
     position: relative;
     margin-top: -300px; }
     .slider-overlapped-cards .card {
-      margin-right: 30px; }
+      margin-right: 40px; }
       .slider-overlapped-cards .card .card-body {
         line-height: 42px;
         overflow-wrap: normal;
         padding: 35px;
         padding-bottom: 45px; }
         .slider-overlapped-cards .card .card-body img {
-          height: 126px;
+          height: 105px;
           padding-bottom: 20px; }
     .slider-overlapped-cards .card:nth-child(3) {
       margin-right: 0px; }

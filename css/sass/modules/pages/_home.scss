@@ -112,11 +112,11 @@
             }
             .btn-round{
                 background-color: #ffffff;
-                color:$primary-color;
-                border:none;
-                font-size: 24px;
-                padding-top: 7px;
-                margin-top:10px;
+                color: $primary-color;
+                border: none;
+                font-size: 22px;
+                padding-top: 5px;
+                margin-top: 15px;
     
             }
             .hover-show{
@@ -377,7 +377,7 @@
             position: relative;
             margin-top: -300px;
             .card{
-                margin-right:30px;
+                margin-right:40px;
                 
                 .card-body{
                     line-height: 42px;
@@ -385,7 +385,7 @@
                     padding:35px;
                     padding-bottom:45px;
                     img{
-                        height: 126px;
+                        height: 105px;
                         padding-bottom: 20px;
                     }
                 }
