@@ -479,8 +479,7 @@ body, .btn-light {
   .header-wrapper .header-info-wrapper {
     overflow: visible; }
   .header-wrapper .header-info {
-    display: flex;
-    margin-top: 10px; }
+    display: flex; }
     .header-wrapper .header-info .header-info-text {
       padding-left: 10px; }
       .header-wrapper .header-info .header-info-text .header-info-text-body {
@@ -546,8 +545,11 @@ body, .btn-light {
       padding: .5rem .5rem; }
     .header-wrapper .header-info {
       margin-right: 30px; }
-      .header-wrapper .header-info .header-info-icon img {
-        width: 30px; }
+      .header-wrapper .header-info .header-info-icon {
+        padding-right: 7px; }
+        .header-wrapper .header-info .header-info-icon img {
+          width: 30px;
+          padding-top: 5px; }
     .header-wrapper .header-bottom {
       position: relative;
       top: 0px;
@@ -729,9 +731,9 @@ main {
     background-repeat: no-repeat;
     background-position: center top; }
     .home-slider .carousel-item .slider-title {
-      padding-top: 90px;
+      padding-top: 60px;
       margin: 0px;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
       font-weight: 600;
       color: #ffffff;
       line-height: 1.3em; }
@@ -744,6 +746,8 @@ main {
         left: 3px; }
   .home-slider .slider1 {
     background-image: url("../images/homesliders/bettertranslate.png"); }
+    .home-slider .slider1 .slider-title, .home-slider .slider1 p {
+      padding-left: 30px; }
 
 .slider-overlapped-cards {
   position: relative;
@@ -790,7 +794,7 @@ main {
   padding-bottom: 70px; }
   .home-services .app-card-flat {
     color: #ffffff;
-    margin-bottom: 40px; }
+    margin-bottom: 80px; }
     .home-services .app-card-flat .app-card-body {
       padding: 35px; }
     .home-services .app-card-flat .btn-round-wrapper {
@@ -806,8 +810,10 @@ main {
       display: none; }
     .home-services .app-card-flat .hover-hide {
       display: inline-flex; }
+    .home-services .app-card-flat .text-detail {
+      min-height: 130px; }
   .home-services .btn-bar {
-    margin: 60px 0px 30px 0px; }
+    margin: 30px 0px 30px 0px; }
   .home-services .app-card-flat:hover .btn-round {
     background-color: #CEA211;
     color: #ffffff;
@@ -939,17 +945,17 @@ main {
       height: 750px;
       padding-top: 0px; }
       .home-slider .carousel-item .slider-title {
-        font-size: 52px; }
+        font-size: 42px; }
 
   .slider-overlapped-cards {
     position: relative;
     margin-top: -300px; }
     .slider-overlapped-cards .card {
-      margin-right: 40px; }
+      margin-right: 30px; }
       .slider-overlapped-cards .card .card-body {
         line-height: 42px;
         overflow-wrap: normal;
-        padding: 35px;
+        padding: 25px;
         padding-bottom: 45px; }
         .slider-overlapped-cards .card .card-body img {
           height: 105px;
