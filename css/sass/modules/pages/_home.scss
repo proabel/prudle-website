@@ -232,18 +232,21 @@
     .home-case-studies{
         padding-bottom:80px;
         .rounded-card-wrapper{
+            padding-right:30px;
+            padding-left:30px;
             .rounded-card-body{
 
                 padding-top:200px;
             }
             .case-title{
-                padding:20px;
-                padding-top:40px;
-                height: 115px;
+                padding:20px 20px 0px 20px;
+                //padding-top:20px;
+                //height: 115px;
             }
             .case-desc{
                 padding:20px;
-                height: 160px;
+                padding-top:0px;
+                //height: 160px;
             }
             .case-study1{
                 background: url('../images/casestudies/casestudy1.png') top center no-repeat; 
@@ -260,6 +263,12 @@
                 background-size: 100%;
                 background-color: rgba(0,0,0,0);  
             }
+        }
+        .rounded-card-wrapper:first-child{
+            padding-right: 0px;
+        }
+        .rounded-card-wrapper:last-child{
+            padding-right: 0px;
         }
         .carousel-dots-wrapper{
             margin-top:20px;

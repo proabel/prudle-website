@@ -9,22 +9,30 @@ footer{
     color:#ffffff;
     padding:40px;
     background: transparent url('../images/footer_wm.svg') 0% 0% no-repeat padding-box;
+    img.footer-logo{
+        width: 200px;
+    }
     .copyrights{
-        padding-top:40px;
+        padding-top:20px;
     }
 }
-.footer-sect{
+ul.footer-sect{
+    padding-top:20px;
     li{
-        padding-bottom: 5px;
+        padding-bottom: 15px;
         a{
             color:#ffffff;
         }
     }
 }
+ul.border-left{
+    border-left: 1px solid #ffffff;
+}
 
 .social-icons-wrapper{
+    margin-top:20px;
  display: flex;
- justify-content: flex-end;
+ justify-content: center;
  a.social-icon{
      color:#ffffff;
      font-size: 18px;
