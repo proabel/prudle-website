@@ -118,6 +118,9 @@ body, p, span, li, a, div, section, table, button, input {
 .p-t-40 {
   padding-top: 40px; }
 
+.p-b-20 {
+  padding-bottom: 20px; }
+
 .p-b-40 {
   padding-bottom: 40px; }
 
@@ -709,22 +712,23 @@ main.main-wrapper {
     color: #ffffff;
     margin-bottom: 80px; }
     .home-services .app-card-flat .app-card-body {
-      padding: 35px; }
+      position: relative;
+      padding: 25px;
+      height: 410px; }
     .home-services .app-card-flat .btn-round-wrapper {
-      height: 0px; }
+      height: 0px;
+      position: relative;
+      margin-top: -35px; }
     .home-services .app-card-flat .btn-round {
       background-color: #ffffff;
       color: #0D59CA;
       border: none;
       font-size: 22px;
-      padding-top: 5px;
-      margin-top: 15px; }
+      padding-top: 5px; }
     .home-services .app-card-flat .hover-show {
       display: none; }
     .home-services .app-card-flat .hover-hide {
       display: inline-flex; }
-    .home-services .app-card-flat .text-detail {
-      min-height: 175px; }
   .home-services .btn-bar {
     margin: 30px 0px 30px 0px; }
   .home-services .app-card-flat:hover .btn-round {
