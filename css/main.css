@@ -775,13 +775,12 @@ main.main-wrapper {
   .home-blogs .date i {
     font-size: 1.2rem; }
 
-.home-lets-talk {
-  padding-top: 30px; }
-  .home-lets-talk .container-fluid {
-    padding-right: 5%;
-    padding-left: 5%; }
-  .home-lets-talk .lets-talk-wrapper {
-    background: url("../images/smwm.png") right top no-repeat; }
+.home-lets-talk .container-fluid {
+  padding-right: 5%;
+  padding-left: 5%; }
+.home-lets-talk .lets-talk-wrapper {
+  padding-top: 30px;
+  background: url("../images/smwm.png") right top no-repeat; }
 
 .home-case-studies {
   padding-bottom: 80px; }
