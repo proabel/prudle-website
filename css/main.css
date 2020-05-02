@@ -156,6 +156,14 @@ body, p, span, li, a, div, section, table, button, input {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.p-h-20 {
+  padding-right: 20px;
+  padding-left: 20px; }
+
+.p-h-40 {
+  padding-right: 40px;
+  padding-left: 40px; }
+
 .m-0 {
   margin: 0px; }
 
@@ -458,126 +466,25 @@ body, .btn-light {
   border-radius: 25px; }
 
 .header-wrapper {
-  position: relative;
-  z-index: 100; }
-  .header-wrapper .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px; }
-  .header-wrapper .navbar-brand {
-    padding-top: 5px; }
-  .header-wrapper .navbar-toggler {
-    color: #ffffff; }
-  .header-wrapper .header-top {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 200; }
+  .header-wrapper header {
     background-color: #ffffff; }
-  .header-wrapper .header-bottom {
-    position: absolute;
-    top: 82px;
-    width: 100%;
-    left: 0px; }
-    .header-wrapper .header-bottom a {
-      color: #ffffff; }
-  .header-wrapper .header-info-wrapper {
-    overflow: visible; }
-  .header-wrapper .header-info {
-    display: flex; }
-    .header-wrapper .header-info .header-info-text {
-      padding-left: 10px; }
-      .header-wrapper .header-info .header-info-text .header-info-text-body {
-        color: #6E6E6E; }
-  .header-wrapper .lang-text {
-    padding-left: 20px; }
-  .header-wrapper .nav-item {
-    padding: .5rem 0rem;
-    padding-top: .75rem; }
-  .header-wrapper .nav-item.active {
-    border-bottom: 4px solid #ffffff; }
-  .header-wrapper .header-bottom .dropdown-menu {
-    border-radius: 0px;
-    border-bottom: 4px solid #CEA211;
-    margin-top: 0px; }
-    .header-wrapper .header-bottom .dropdown-menu a.dropdown-item {
-      color: #333333;
-      padding-top: .5rem;
-      padding-bottom: .5rem; }
-      .header-wrapper .header-bottom .dropdown-menu a.dropdown-item span {
-        padding-right: 10px; }
-    .header-wrapper .header-bottom .dropdown-menu a.dropdown-item:hover {
-      color: #EAB300;
-      background: none; }
-  .header-wrapper .header-bottom-sticky-wrapper {
-    position: fixed;
-    top: 0px;
-    background-color: #116AD8;
-    width: 100%; }
-  .header-wrapper .header-search.input-group {
-    margin-bottom: 0px; }
-    .header-wrapper .header-search.input-group input.form-control {
-      border-radius: 0px;
-      border: none;
-      height: 60px;
-      background: #116AD8;
-      color: #efefef;
-      padding: 0px 0px 0px 1.2rem; }
-    .header-wrapper .header-search.input-group input.form-control::placeholder {
-      color: #ffffff; }
-    .header-wrapper .header-search.input-group button.btn {
-      border: none;
-      color: #ffffff;
-      background-color: #116AD8;
-      padding-right: 1.2rem; }
-  .header-wrapper .app-sticky-top {
-    position: fixed;
-    top: 0px;
-    height: 75px;
-    width: 100%;
-    display: none;
-    background: #ffffff; }
-    .header-wrapper .app-sticky-top .navbar-brand img {
-      width: 160px; }
-    .header-wrapper .app-sticky-top .navbar-toggler i {
-      color: #0D59CA; }
-  @media (min-width: 992px) {
-    .header-wrapper .header-top .navbar {
-      height: 104px; }
-      .header-wrapper .header-top .navbar .navbar-brand img {
-        height: 60px; }
-    .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
-      padding: .5rem .5rem; }
-    .header-wrapper .header-info {
-      margin-right: 30px; }
-      .header-wrapper .header-info .header-info-icon {
-        padding-right: 7px; }
-        .header-wrapper .header-info .header-info-icon img {
-          width: 30px;
-          padding-top: 5px; }
-    .header-wrapper .header-bottom {
-      position: relative;
-      top: 0px;
-      width: 100%;
-      height: 60px !important; }
-      .header-wrapper .header-bottom .navbar-nav .nav-item {
-        padding: .5rem .7rem; }
-    .header-wrapper .app-sticky-top {
-      top: -200px; }
-    .header-wrapper .header-bottom-sticky-wrapper {
-      display: none; }
-      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav {
-        height: 60px; }
-        .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky ul.navbar-nav .nav-item a.nav-link {
-          padding: .7rem 1rem; }
-      .header-wrapper .header-bottom-sticky-wrapper .header-bottom-sticky .navbar-brand img {
-        height: 40px; } }
-  @media (min-width: 1200px) {
-    .header-wrapper .header-top .navbar-brand {
-      padding-right: 40px; }
-    .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
-      padding: .5rem 1rem; }
-    .header-wrapper .header-info {
-      margin-right: 65px; }
-    .header-wrapper .header-bottom {
-      position: relative;
-      top: 0px;
-      width: 100%; } }
+    .header-wrapper header .navbar {
+      height: 90px;
+      padding-top: 0px;
+      background-color: #ffffff !important; }
+      .header-wrapper header .navbar a.navbar-brand {
+        padding-top: 0px; }
+        .header-wrapper header .navbar a.navbar-brand img {
+          height: 60px; }
+      .header-wrapper header .navbar ul.main-nav-list {
+        padding-top: 13px;
+        width: 100%; }
+        .header-wrapper header .navbar ul.main-nav-list li.nav-item {
+          padding-right: 35px; }
 
 footer {
   position: fixed;
@@ -650,6 +557,9 @@ footer {
 .drop-shadow5 {
   box-shadow: 0px 0px 20px #00000029; }
 
+.drop-shadow6 {
+  box-shadow: 0px 2px 20px #0000009D; }
+
 .section-intro {
   padding: 30px 0px; }
   .section-intro .section-title {
@@ -691,6 +601,9 @@ main {
   z-index: 5;
   background-color: #ffffff; }
 
+main.main-wrapper {
+  margin-top: 90px; }
+
 .mock-main {
   display: block;
   width: 100%;
@@ -731,7 +644,7 @@ main {
     background-repeat: no-repeat;
     background-position: center top; }
     .home-slider .carousel-item .slider-title {
-      padding-top: 60px;
+      padding-top: 80px;
       margin: 0px;
       padding-bottom: 20px;
       font-weight: 600;
@@ -951,7 +864,7 @@ main {
     position: relative;
     margin-top: -300px; }
     .slider-overlapped-cards .card {
-      margin-right: 30px; }
+      margin-right: 50px; }
       .slider-overlapped-cards .card .card-body {
         line-height: 42px;
         overflow-wrap: normal;
