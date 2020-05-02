@@ -724,7 +724,7 @@ main.main-wrapper {
     .home-services .app-card-flat .hover-hide {
       display: inline-flex; }
     .home-services .app-card-flat .text-detail {
-      min-height: 130px; }
+      min-height: 175px; }
   .home-services .btn-bar {
     margin: 30px 0px 30px 0px; }
   .home-services .app-card-flat:hover .btn-round {
