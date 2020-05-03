@@ -102,21 +102,52 @@ body, p, span, li, a, div, section, table, button, input{
 .m-b-100{
     margin-bottom:100px;
 }
-// sizes
+// DEFAULT (Smaller) screens
 .text-small{
-    font-size: .92rem;
+    font-size: .88rem;
 }
-.text-big{
+.text-small2{
+    font-size: .81rem;
+}
+.text-medium{
     font-size: 1.1rem;
 }
+.text-big{
+    font-size: 1.25rem;
+}
+.text-big-1-5{
+    font-size: 1.4rem;
+}
 .text-big2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+.text-big3{
+    font-size: 1.9rem;
+}
+.text-big4{
+    font-size: 2.1rem;
 }
 .text-large{
-    font-size: 2rem;
+    font-size: 2.3rem;
+}
+.text-enormous{
+    font-size: 4.3rem;
+}
+.text-explosive{
+    font-size: 12.5rem;  // 246px
 }
 .spread{
     letter-spacing: .21px;
+}
+
+.spread2{
+    letter-spacing: .64px;
+}
+.spread3{
+    letter-spacing: 1.34px;
+}
+.spread4{
+    letter-spacing: 3.94px;
 }
 .lh-60{
     line-height: 60px;
