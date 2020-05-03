@@ -610,10 +610,17 @@ body, .btn-light {
 @media (min-width: 1200px) {
   .header-wrapper header .navbar a.navbar-brand img {
     height: 60px; }
-  .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item {
-    font-size: 1.1rem; }
-    .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a {
-      padding-left: 10px; } }
+  .header-wrapper header .navbar .navbar-collapse ul.main-nav-list {
+    padding-top: 13px; }
+    .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item {
+      padding: 20px 35px 18px 0px;
+      font-size: 1.1rem; }
+      .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a {
+        padding-left: 10px; }
+      .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a.btn {
+        margin-top: 0px;
+        font-size: 1.1rem;
+        padding: 7px 20px; } }
 footer {
   position: fixed;
   bottom: 0px;
