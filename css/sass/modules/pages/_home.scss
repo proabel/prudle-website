@@ -6,23 +6,26 @@
 
     .home-slider{
         //background-color: #072A9F;
-        position: relative; 
-        top:-96px; //changes in bigger screens
+        //position: relative; 
+        //top:-96px; //changes in bigger screens
         z-index: 1;
         .carousel-item{
-            padding-top:96px;
-            height: 700px;
-            background-size: 1100px;
+            //margin-top:96px;
+            // height: 700px;
+            // background-size: 1100px;
             background-repeat: no-repeat;
             background-position: center top;
+            background-size:500px;
             .slider-title{
-                padding-top:80px;
+                //padding-top:80px;
+                padding-top:20px;
                 margin:0px;
                 padding-bottom:20px;
                 font-weight: 600;
                 color: #ffffff;
                 //padding: .8em;
                 line-height: 1.3em;
+                font-size: 1.5rem;
             }
             .slider-btn{
                 margin-right: 10px;
@@ -36,9 +39,12 @@
         }
         .slider1{
             .slider-title, p{
-                padding-left:30px;
+                //padding-left:30px;
             }
-            background-image: url('../images/homesliders/bettertranslate.png');
+            //background: $primary-bright-color;
+            background: transparent linear-gradient(180deg, #0D59CA 0%, #0A449B 54%, #004181 100%) 0% 0% no-repeat padding-box;
+
+            //background-image: url('../images/homesliders/bettertranslate.png');
         }
     }
     
@@ -46,7 +52,7 @@
     
     .slider-overlapped-cards{
         position: relative;
-        margin-top: -150px;
+        //margin-top: -150px;
         z-index: 10;
         // .container{
         //     padding: 0px 40px;

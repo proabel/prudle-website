@@ -31,7 +31,9 @@ align-self-end {
 
 .full-block {
   width: 100%;
-  display: block; }
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px; }
 
 @media (min-width: 768px) {
   .collapse.dont-collapse-md {
@@ -777,22 +779,19 @@ main.main-wrapper {
 /******** LANDING PAGE  **************/
 /*************************************/
 .home-slider {
-  position: relative;
-  top: -96px;
   z-index: 1; }
   .home-slider .carousel-item {
-    padding-top: 96px;
-    height: 700px;
-    background-size: 1100px;
     background-repeat: no-repeat;
-    background-position: center top; }
+    background-position: center top;
+    background-size: 500px; }
     .home-slider .carousel-item .slider-title {
-      padding-top: 80px;
+      padding-top: 20px;
       margin: 0px;
       padding-bottom: 20px;
       font-weight: 600;
       color: #ffffff;
-      line-height: 1.3em; }
+      line-height: 1.3em;
+      font-size: 1.5rem; }
     .home-slider .carousel-item .slider-btn {
       margin-right: 10px;
       margin-bottom: 10px; }
@@ -801,13 +800,10 @@ main.main-wrapper {
         top: 3px;
         left: 3px; }
   .home-slider .slider1 {
-    background-image: url("../images/homesliders/bettertranslate.png"); }
-    .home-slider .slider1 .slider-title, .home-slider .slider1 p {
-      padding-left: 30px; }
+    background: transparent linear-gradient(180deg, #0D59CA 0%, #0A449B 54%, #004181 100%) 0% 0% no-repeat padding-box; }
 
 .slider-overlapped-cards {
   position: relative;
-  margin-top: -150px;
   z-index: 10; }
   .slider-overlapped-cards .card {
     margin-bottom: 20px;
