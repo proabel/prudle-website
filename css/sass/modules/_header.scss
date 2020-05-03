@@ -7,7 +7,7 @@
     header{
         background-color: #ffffff;
         .navbar{
-            height: 90px;
+            height: 75px;
             padding-top:0px;
             background-color: #ffffff !important;
             a.navbar-brand{
@@ -18,7 +18,7 @@
             }
             .navbar-collapse{
                 position: fixed;
-                top: 90px;
+                top: 75px;
                 right: 0px;
                 width: 100%;
                 background: #ffffff;
@@ -129,7 +129,7 @@
         header{
             .navbar{
                 a.navbar-brand{
-                    padding-top: 0px;
+                    padding-top: 10px;
                     img{
                         height:50px;
                     }
@@ -184,14 +184,14 @@
             .navbar{
                 a.navbar-brand{
                     img{
-                        height:60px;
+                        height:55px;
                     }
                 }
                 .navbar-collapse{
                     ul.main-nav-list{
                         padding-top: 13px;
                         li.nav-item{
-                            padding: 20px 35px 18px 0px;
+                            padding: 10px 35px 10px 0px;
                             font-size: 1.1rem;
                             a{
                                 padding-left:10px;

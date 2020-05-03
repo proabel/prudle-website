@@ -54,7 +54,13 @@ align-self-end {
 
   .relative-from-lg {
     position: relative;
-    top: 0px; } }
+    top: 0px; }
+
+  .full-block {
+    width: 100%;
+    display: block;
+    padding-right: 80px;
+    padding-left: 80px; } }
 @media (min-width: 1200px) {
   .collapse.dont-collapse-xl {
     display: flex;
@@ -508,7 +514,7 @@ body, .btn-light {
   .header-wrapper header {
     background-color: #ffffff; }
     .header-wrapper header .navbar {
-      height: 90px;
+      height: 75px;
       padding-top: 0px;
       background-color: #ffffff !important; }
       .header-wrapper header .navbar a.navbar-brand {
@@ -517,7 +523,7 @@ body, .btn-light {
           height: 55px; }
       .header-wrapper header .navbar .navbar-collapse {
         position: fixed;
-        top: 90px;
+        top: 75px;
         right: 0px;
         width: 100%;
         background: #ffffff;
@@ -588,7 +594,7 @@ body, .btn-light {
     height: 60px; } }
 @media (min-width: 992px) {
   .header-wrapper header .navbar a.navbar-brand {
-    padding-top: 0px; }
+    padding-top: 10px; }
     .header-wrapper header .navbar a.navbar-brand img {
       height: 50px; }
   .header-wrapper header .navbar .navbar-collapse {
@@ -611,11 +617,11 @@ body, .btn-light {
         left: auto; } }
 @media (min-width: 1200px) {
   .header-wrapper header .navbar a.navbar-brand img {
-    height: 60px; }
+    height: 55px; }
   .header-wrapper header .navbar .navbar-collapse ul.main-nav-list {
     padding-top: 13px; }
     .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item {
-      padding: 20px 35px 18px 0px;
+      padding: 10px 35px 10px 0px;
       font-size: 1.1rem; }
       .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a {
         padding-left: 10px; }
@@ -747,7 +753,7 @@ main {
   background-color: #ffffff; }
 
 main.main-wrapper {
-  margin-top: 90px; }
+  margin-top: 75px; }
 
 .mock-main {
   display: block;
@@ -1002,11 +1008,20 @@ main.main-wrapper {
       height: 750px;
       padding-top: 0px; }
       .home-slider .carousel-item .slider-title {
-        font-size: 42px; }
+        font-size: 42px;
+        padding-top: 40px; }
+    .home-slider .slider1 {
+      background-color: unset;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      background-image: url("../images/homesliders/bettertranslate.png"); }
+      .home-slider .slider1 p {
+        text-align: center; }
 
   .slider-overlapped-cards {
     position: relative;
-    margin-top: -300px; }
+    margin-top: -400px; }
     .slider-overlapped-cards .card {
       margin-right: 50px; }
       .slider-overlapped-cards .card .card-body {
