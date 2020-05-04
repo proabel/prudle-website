@@ -60,7 +60,7 @@
         .card{
             margin-bottom:20px;
             background: none;
-            height: 450px;
+            //height: 450px;
             .card-body{
                 position: relative;
                 margin:0px 10px;
@@ -487,11 +487,14 @@
                 margin-right:50px;
                 
                 .card-body{
-                    //height: 400px;
+                    height: 400px;
                     line-height: 42px;
                     overflow-wrap: normal;
                     padding:25px;
                     padding-bottom:45px;
+                    .product-title{
+                        font-size: 1.8rem;
+                    }
                     img{
                         height: 105px;
                         padding-bottom: 20px;
@@ -545,6 +548,72 @@
     
         .slider-overlapped-cards{
             //position: relative;
+            margin-top: -300px;
+            .card{
+                //margin-right:50px;
+                
+                .card-body{
+                    //height: 400px;
+                    // line-height: 42px;
+                    // overflow-wrap: normal;
+                    // padding:25px;
+                    // padding-bottom:45px;
+                    .product-title{
+                        font-size: 2.1rem;
+                    }
+                    img{
+                        // height: 105px;
+                        // padding-bottom: 20px;
+                    }
+                }
+            }
+            .card:nth-child(3){
+                // margin-right:0px;
+            }
+        }
+    
+        .home-case-studies{
+            .app-card-wrapper{
+                .app-card-body{
+                    // padding-top:200px;
+                    
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1350px){
+        .section-intro{
+            //padding:60px 0px;
+        }
+        .home-slider{
+            //top:0px;
+            .carousel-item{
+                // background-size: cover;
+                // height: 750px;
+                // padding-top:0px;    
+                .slider-title{
+                    // font-size: 42px;
+                    // padding-top: 40px;
+                }
+                .slider-btn.btn-long{
+                    //padding: .7rem 2.4rem;
+                }
+            }
+            .slider1{
+                // background-color: unset;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center top;
+                // background-image: url('../images/homesliders/bettertranslate.png');
+                p{
+                    // text-align: center;
+                }
+            }
+        }
+    
+        .slider-overlapped-cards{
+            //position: relative;
             margin-top: -400px;
             .card{
                 //margin-right:50px;
@@ -555,6 +624,9 @@
                     // overflow-wrap: normal;
                     // padding:25px;
                     // padding-bottom:45px;
+                    .product-title{
+                        //font-size: 2.1rem;
+                    }
                     img{
                         // height: 105px;
                         // padding-bottom: 20px;
