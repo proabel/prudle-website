@@ -962,6 +962,7 @@ main.main-wrapper {
 .home-testimonials {
   padding-bottom: 60px; }
   .home-testimonials .testimonial-wrapper {
+    margin-bottom: 20px;
     padding-right: 30px;
     padding-left: 30px; }
     .home-testimonials .testimonial-wrapper .testimonial-content {
@@ -982,6 +983,11 @@ main.main-wrapper {
       padding-top: 20px; }
   .home-testimonials .carousel-dots-wrapper {
     margin-top: 40px; }
+
+.clients-wrapper img {
+  max-height: 120px;
+  margin: 20px 0px;
+  flex-grow: 0; }
 
 @media (min-width: 576px) {
   .home-slider {
@@ -1083,7 +1089,16 @@ main.main-wrapper {
       margin-right: 0px; }
 
   .home-case-studies .rounded-card-wrapper .rounded-card-body {
-    padding-top: 200px; } }
+    padding-top: 200px; }
+
+  .home-testimonials {
+    padding-bottom: 60px; }
+    .home-testimonials .testimonial-wrapper {
+      margin-bottom: 0px; }
+
+  .clients-wrapper img {
+    max-height: 120px;
+    margin: 0px; } }
 @media (min-width: 1200px) {
   .slider-overlapped-cards {
     margin-top: -300px; }
