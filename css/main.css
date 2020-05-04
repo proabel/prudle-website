@@ -812,6 +812,7 @@ main.main-wrapper {
 
 .slider-overlapped-cards {
   position: relative;
+  margin-top: 20px;
   z-index: 10; }
   .slider-overlapped-cards .card {
     margin-bottom: 20px;
@@ -982,9 +983,34 @@ main.main-wrapper {
     margin-top: 40px; }
 
 @media (min-width: 576px) {
+  .home-slider {
+    z-index: 1; }
+    .home-slider .carousel-item {
+      background-size: 800px;
+      background-repeat: no-repeat;
+      background-position: center top; }
+      .home-slider .carousel-item .slider-title {
+        padding-top: 20px;
+        margin: 0px;
+        padding-bottom: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.3em;
+        font-size: 1.5rem; }
+      .home-slider .carousel-item .slider-btn {
+        margin-right: 10px;
+        margin-bottom: 10px; }
+        .home-slider .carousel-item .slider-btn ion-icon {
+          position: relative;
+          top: 3px;
+          left: 3px; }
+    .home-slider .slider1 {
+      height: 320px;
+      text-align: center;
+      background-image: url("../images/homesliders/bettertranslate.png"); }
+
   .slider-overlapped-cards {
-    position: relative;
-    margin-top: -200px; }
+    position: relative; }
     .slider-overlapped-cards .card .card-body {
       line-height: 42px;
       overflow-wrap: normal;
@@ -997,6 +1023,11 @@ main.main-wrapper {
   .home-case-studies .app-card-wrapper .app-card-body {
     padding-top: 300px; } }
 @media (min-width: 768px) {
+  .home-slider .carousel-item {
+    background-size: 770px; }
+  .home-slider .slider1 {
+    height: 350px; }
+
   .home-case-studies .app-card-wrapper .app-card-body {
     padding-top: 400px; } }
 @media (min-width: 992px) {
