@@ -515,7 +515,7 @@ body, .btn-light {
     background-color: #ffffff; }
     .header-wrapper header .navbar {
       height: 75px;
-      padding-top: 0px;
+      padding-top: 10px;
       background-color: #ffffff !important; }
       .header-wrapper header .navbar a.navbar-brand {
         padding-top: 0px; }
@@ -593,28 +593,30 @@ body, .btn-light {
   .header-wrapper header .navbar a.navbar-brand img {
     height: 60px; } }
 @media (min-width: 992px) {
-  .header-wrapper header .navbar a.navbar-brand {
-    padding-top: 10px; }
-    .header-wrapper header .navbar a.navbar-brand img {
-      height: 50px; }
-  .header-wrapper header .navbar .navbar-collapse {
-    position: relative;
-    top: 0px;
-    border: none; }
-    .header-wrapper header .navbar .navbar-collapse ul.main-nav-list {
-      padding-top: 20px; }
-      .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item {
-        padding: 16px 5px;
-        font-size: 1rem; }
-        .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a.btn {
-          margin-top: 3px; }
-      .header-wrapper header .navbar .navbar-collapse ul.main-nav-list .dropdown-menu {
-        margin-top: 5px; }
-    .header-wrapper header .navbar .navbar-collapse .language-select {
-      padding: 15px 0px 0px 0px; }
-      .header-wrapper header .navbar .navbar-collapse .language-select .dropdown-menu {
-        right: 0;
-        left: auto; } }
+  .header-wrapper header .navbar {
+    padding-top: 0px; }
+    .header-wrapper header .navbar a.navbar-brand {
+      padding-top: 10px; }
+      .header-wrapper header .navbar a.navbar-brand img {
+        height: 50px; }
+    .header-wrapper header .navbar .navbar-collapse {
+      position: relative;
+      top: 0px;
+      border: none; }
+      .header-wrapper header .navbar .navbar-collapse ul.main-nav-list {
+        padding-top: 20px; }
+        .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item {
+          padding: 8px 5px;
+          font-size: 1rem; }
+          .header-wrapper header .navbar .navbar-collapse ul.main-nav-list li.nav-item a.btn {
+            margin-top: 3px; }
+        .header-wrapper header .navbar .navbar-collapse ul.main-nav-list .dropdown-menu {
+          margin-top: 5px; }
+      .header-wrapper header .navbar .navbar-collapse .language-select {
+        padding: 15px 0px 0px 0px; }
+        .header-wrapper header .navbar .navbar-collapse .language-select .dropdown-menu {
+          right: 0;
+          left: auto; } }
 @media (min-width: 1200px) {
   .header-wrapper header .navbar a.navbar-brand img {
     height: 55px; }

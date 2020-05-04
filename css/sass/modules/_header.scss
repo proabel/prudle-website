@@ -8,7 +8,7 @@
         background-color: #ffffff;
         .navbar{
             height: 75px;
-            padding-top:0px;
+            padding-top:10px;
             background-color: #ffffff !important;
             a.navbar-brand{
                 padding-top: 0px;
@@ -128,6 +128,7 @@
     .header-wrapper{
         header{
             .navbar{
+                padding-top:0px;
                 a.navbar-brand{
                     padding-top: 10px;
                     img{
@@ -141,7 +142,8 @@
                     ul.main-nav-list{
                         padding-top: 20px;
                         li.nav-item{
-                            padding:16px 5px;
+                            padding:8px 5px;
+                            //padding: 10px 35px 10px 0px;
                             font-size: 1rem;
                             a{
                                 // padding:0px;
