@@ -117,6 +117,11 @@
                 position: relative;
                 padding:25px;
                 height:410px;
+                .svg-wrapper{
+                    object{
+                        width:60px;
+                    }
+                }
             }
             .btn-round-wrapper{
                 height: 0px;
@@ -391,12 +396,29 @@
                 }
             }
         }
-    
-        .home-case-studies{
-            .app-card-wrapper{
+        .home-services{
+            .app-card-flat{
                 .app-card-body{
-                    padding-top:300px;
+                    .svg-wrapper{
+                        object{
+                            width:inherit;
+                        }
+                    }
+                }
+            }
+        }
+        // .home-case-studies{
+        //     .app-card-wrapper{
+        //         .app-card-body{
+        //             padding-top:300px;
                     
+        //         }
+        //     }
+        // }
+        .home-case-studies{
+            .rounded-card-wrapper{
+                .rounded-card-body{
+                    padding-top:300px;
                 }
             }
         }
@@ -446,6 +468,13 @@
                 .app-card-body{
                     padding-top:400px;
                     
+                }
+            }
+        }
+        .home-case-studies{
+            .rounded-card-wrapper{
+                .rounded-card-body{
+                    padding-top:400px;
                 }
             }
         }
@@ -507,10 +536,9 @@
         }
     
         .home-case-studies{
-            .app-card-wrapper{
-                .app-card-body{
+            .rounded-card-wrapper{
+                .rounded-card-body{
                     padding-top:200px;
-                    
                 }
             }
         }
