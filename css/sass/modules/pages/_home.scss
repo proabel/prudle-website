@@ -701,3 +701,15 @@
             }
         }
     }
+    @media (min-width: 1800px){
+        .section-intro{
+            //padding:60px 0px;
+        }
+        .home-slider{
+           
+            .carousel-item{
+                height: 900;
+            }
+        }
+
+    }

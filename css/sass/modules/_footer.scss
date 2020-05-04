@@ -1,9 +1,8 @@
 footer{
-    //background-color: 
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    z-index: 1;
+    // position: fixed;
+    // bottom: 0px;
+    // width: 100%;
+    // z-index: 1;
 }
 .footer-wrapper{
     color:#ffffff;
@@ -25,9 +24,9 @@ ul.footer-sect{
         }
     }
 }
-ul.border-left{
-    border-left: 1px solid #ffffff;
-}
+// ul.border-left{
+//     border-left: 1px solid #ffffff;
+// }
 
 .social-icons-wrapper{
     margin-top:20px;
@@ -50,4 +49,18 @@ ul.border-left{
      text-decoration: none;
  }
  
+}
+
+
+// LARGE SCREENS
+@media (min-width: 992px) {
+    footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        z-index: 1;
+        ul.sect-border-left{
+            border-left: 1px solid #ffffff;
+        }
+    }
 }

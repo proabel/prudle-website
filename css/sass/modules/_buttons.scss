@@ -39,3 +39,16 @@
 .btn.hvr-color-accent:hover{
     color: $accent-dark-color;
 }
+
+.btn-outline-primary{
+    border-color: $primary-bright-color;
+    color: $primary-bright-color;
+}
+
+.btn-outline-primary:hover{
+    background-color: $primary-bright-color;
+}
+
+.btn-link, .btn-link:hover{
+    color: $primary-bright-color;
+}

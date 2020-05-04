@@ -358,6 +358,16 @@ body, .btn-light {
 .btn.hvr-color-accent:hover {
   color: #CEA211; }
 
+.btn-outline-primary {
+  border-color: #116AD8;
+  color: #116AD8; }
+
+.btn-outline-primary:hover {
+  background-color: #116AD8; }
+
+.btn-link, .btn-link:hover {
+  color: #116AD8; }
+
 .app-icon {
   width: 18px;
   height: 18px;
@@ -631,12 +641,6 @@ body, .btn-light {
         margin-top: 0px;
         font-size: 1.1rem;
         padding: 7px 20px; } }
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  z-index: 1; }
-
 .footer-wrapper {
   color: #ffffff;
   padding: 40px;
@@ -652,9 +656,6 @@ ul.footer-sect {
     padding-bottom: 15px; }
     ul.footer-sect li a {
       color: #ffffff; }
-
-ul.border-left {
-  border-left: 1px solid #ffffff; }
 
 .social-icons-wrapper {
   margin-top: 20px;
@@ -674,6 +675,14 @@ ul.border-left {
   .social-icons-wrapper a.social-icon:hover {
     text-decoration: none; }
 
+@media (min-width: 992px) {
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1; }
+    footer ul.sect-border-left {
+      border-left: 1px solid #ffffff; } }
 .no-hover {
   pointer-events: none; }
 
@@ -749,7 +758,6 @@ ul.star-rating-wrapper {
     color: #FDC668; }
 
 main {
-  margin-bottom: 550px;
   position: relative;
   z-index: 5;
   background-color: #ffffff; }
@@ -784,6 +792,9 @@ main.main-wrapper {
 .w100p {
   width: 100%; }
 
+@media (min-width: 992px) {
+  main {
+    margin-bottom: 550px; } }
 /******** LANDING PAGE  **************/
 /*************************************/
 .home-slider {
@@ -1107,6 +1118,9 @@ main.main-wrapper {
 @media (min-width: 1350px) {
   .slider-overlapped-cards {
     margin-top: -400px; } }
+@media (min-width: 1800px) {
+  .home-slider .carousel-item {
+    height: 900; } }
 .page-banner.about-us {
   background: url("../images/about_us/about_banner.png") no-repeat top center;
   background-size: cover;
