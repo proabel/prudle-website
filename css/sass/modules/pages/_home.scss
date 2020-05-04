@@ -348,15 +348,19 @@
                 .slider-btn{
                     margin-right: 10px;
                     margin-bottom: 10px;
+                    
                     ion-icon{
                         position: relative;
                         top:3px;
                         left: 3px;
                     }
                 }
+                .slider-btn.btn-long{
+                    padding: .7rem 1.5rem;
+                }
             }
             .slider1{
-                height: 320px;
+                height: 360px;
                 text-align: center;
                 .slider-title, p{
                     //padding-left:30px;
@@ -407,17 +411,15 @@
             .carousel-item{
                 //margin-top:96px;
                 //height: 700px;
-                background-size: 770px;
+                background-size: cover;
                 
                 .slider-title{
                    
                 }
-                .slider-btn{
-                   
-                }
+                
             }
             .slider1{
-                height: 350px;
+                height: 450px;
             }
         }
         .slider-overlapped-cards{
@@ -462,6 +464,9 @@
                     font-size: 42px;
                     padding-top: 40px;
                 }
+                .slider-btn.btn-long{
+                    padding: .7rem 2.4rem;
+                }
             }
             .slider1{
                 background-color: unset;
@@ -477,7 +482,7 @@
     
         .slider-overlapped-cards{
             position: relative;
-            margin-top: -400px;
+            margin-top: -300px;
             .card{
                 margin-right:50px;
                 
@@ -502,6 +507,69 @@
             .app-card-wrapper{
                 .app-card-body{
                     padding-top:200px;
+                    
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px){
+        .section-intro{
+            //padding:60px 0px;
+        }
+        .home-slider{
+            //top:0px;
+            .carousel-item{
+                // background-size: cover;
+                // height: 750px;
+                // padding-top:0px;    
+                .slider-title{
+                    // font-size: 42px;
+                    // padding-top: 40px;
+                }
+                .slider-btn.btn-long{
+                    //padding: .7rem 2.4rem;
+                }
+            }
+            .slider1{
+                // background-color: unset;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center top;
+                // background-image: url('../images/homesliders/bettertranslate.png');
+                p{
+                    // text-align: center;
+                }
+            }
+        }
+    
+        .slider-overlapped-cards{
+            //position: relative;
+            margin-top: -400px;
+            .card{
+                //margin-right:50px;
+                
+                .card-body{
+                    //height: 400px;
+                    // line-height: 42px;
+                    // overflow-wrap: normal;
+                    // padding:25px;
+                    // padding-bottom:45px;
+                    img{
+                        // height: 105px;
+                        // padding-bottom: 20px;
+                    }
+                }
+            }
+            .card:nth-child(3){
+                // margin-right:0px;
+            }
+        }
+    
+        .home-case-studies{
+            .app-card-wrapper{
+                .app-card-body{
+                    // padding-top:200px;
                     
                 }
             }
